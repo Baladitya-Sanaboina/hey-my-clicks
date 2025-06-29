@@ -1,0 +1,5223 @@
+@charset "utf-8";
+/*
+/*	Copyright (c) 2017 Meghana Priyanka❤️
+/*	Author: Meghana Priyanka❤️
+/*	This file is made for CURRENT TEMPLATE
+/*
+	
+	
+	
+	01) BASE
+	02) HEADER
+	03) HORIZONTAL MENU
+	04) MOBILE MENU
+	05) HEADER #1
+	06) HAMBURGER MENU
+	07) FLEXSLIDER
+	08) PORTFOLIO LIST IN HOMEPAGE
+	09) BREADCRUMBS
+	10) BLOG
+	11) SPLIT PAGE
+	12) PORTFOLIO #1
+	13) PORTFOLIO #2
+	14) PORTFOLIO #3
+	15) PORTFOLIO SINGLE
+	16) BLOG in SPLIT PAGE (BLOG #2)
+	17) my HEROHEADER
+	18) PROOFING
+	19) MAGNIFIC POPUP ANIMATION
+	20) CLIENTS
+	21) CLIENT SINGLE
+	22) ABOUT
+	23) CONTACT
+	24) PAGE 404
+	25) GALLERY PAGE
+	26) SOCIAL ICONS
+	27) BLOG SINGLE
+	28) PAGINATION
+	29) FOOTER
+	30) TOTOP
+	31) MEDIA QUERIES (FOR SMALL DEVICES)
+
+
+
+/*------------------------------------------------------------------*/
+/*	01) BASE
+/*------------------------------------------------------------------*/
+html {
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  font-family: "Anonymous Pro", monospace;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  font-family: "Poppins";
+}
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+  color: #111;
+  text-decoration: none;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+textarea,
+input,
+button {
+  outline: none;
+}
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+h1 > a:hover,
+h2 > a:hover,
+h3 > a:hover,
+h4 > a:hover,
+h5 > a:hover,
+h6 > a:hover {
+  color: #eb1010;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+.svg {
+  width: 20px;
+  height: 20px;
+  fill: currentcolor;
+}
+.fotofly_fn_content {
+  width: 100%;
+  clear: both;
+  float: left;
+}
+a.fotofly_fn_animated_link {
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  border-bottom: none !important;
+}
+a.fotofly_fn_animated_link:after {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: -2px;
+  left: 100%;
+  background-color: #fff;
+
+  -webkit-transition: left 0.5s ease, width 0.5s ease;
+  -moz-transition: left 0.5s ease, width 0.5s ease;
+  -ms-transition: left 0.5s ease, width 0.5s ease;
+  -o-transition: left 0.5s ease, width 0.5s ease;
+  transition: left 0.5s ease, width 0.5s ease;
+}
+a.fotofly_fn_animated_link:hover:after {
+  width: 100%;
+  left: 0;
+
+  -webkit-transition: width 0.5s ease;
+  -moz-transition: width 0.5s ease;
+  -ms-transition: width 0.5s ease;
+  -o-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+.fotofly_fn_wrapper_all {
+  width: 100%;
+  float: left;
+  height: auto;
+  clear: both;
+}
+/*------------------------------------------------------------------*/
+/*	02) HEADER
+/*------------------------------------------------------------------*/
+.fotofly_fn_header {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: auto;
+  position: relative;
+  background-color: #000;
+
+  z-index: 1000;
+}
+.fotofly_fn_header_content {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: auto;
+  padding: 16px 50px 10px;
+  position: relative;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_header .header_inner {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: auto;
+  position: relative;
+}
+.fotofly_fn_header .header_list {
+  text-align: center;
+  width: 100%;
+  min-height: 36px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_header ul.nav__hor {
+  list-style-type: none;
+  margin: 0px;
+  display: inline-block;
+}
+ul.nav__hor > li {
+  margin: 0px;
+  float: left;
+  padding: 0px 27px;
+  color: #fff;
+}
+ul.nav__hor li a {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: currentColor;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.75px;
+  font-weight: 400;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.logo {
+  display: inline-block;
+  margin: 0px 53px;
+}
+.logo a .dark {
+  display: none;
+}
+.logo a .light {
+  display: block;
+}
+
+.header_helper {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.header_helper ul {
+  list-style-type: none;
+  margin: 0px;
+}
+.header_helper ul li {
+  margin: 0px;
+  float: left;
+  padding: 0px 10px;
+  position: relative;
+  height: 36px;
+  display: table;
+}
+.header_helper ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 7px 0px 8px 0px;
+}
+.header_helper ul li .svg {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+.header_helper ul li .trigger {
+  display: block;
+}
+.header_helper ul li.trigger a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+.header_helper ul li .trigger .a,
+.header_helper ul li .trigger .b,
+.header_helper ul li .trigger .c {
+  width: 26px;
+  height: 2px;
+  display: block;
+  margin-bottom: 5px;
+  background-color: #fff;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header_helper ul li .trigger span.b {
+  width: 20px;
+}
+.header_helper ul li .trigger span.c {
+  margin-bottom: 0px;
+}
+.header_helper ul li.trigger a:hover span.b {
+  margin-left: 6px;
+}
+.header_helper ul li.trigger a:hover span.a {
+  width: 20px;
+}
+.header_helper ul li.trigger a:hover span.c {
+  margin-right: 6px;
+  width: 20px;
+}
+
+.header_helper ul li.share:hover ul.hidden {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0px;
+}
+.header_helper ul.hidden {
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  margin-top: 10px;
+  background-color: #111;
+  padding: 12px 0px;
+
+  -webkit-box-shadow: 1px 1px 3px rgba(235, 16, 16, 0.3);
+  -moz-box-shadow: 1px 1px 3px rgba(235, 16, 16, 0.3);
+  box-shadow: 1px 1px 3px rgba(235, 16, 16, 0.3);
+
+  opacity: 0;
+  visibility: hidden;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.header_helper ul.hidden a {
+  color: #999;
+
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.header_helper ul.hidden a:hover {
+  color: #fff;
+}
+.header_helper.nonono {
+  display: none;
+}
+
+.fotofly_fn_header.absolute {
+  position: absolute;
+}
+.fotofly_fn_header.relative {
+  position: relative;
+}
+.fotofly_fn_header.fixed {
+  position: fixed;
+}
+
+.fotofly_fn_header[data-theme="dark"] {
+  background-color: #111;
+}
+.fotofly_fn_header[data-theme="dark"] ul.nav__hor li {
+  color: #fff;
+}
+.fotofly_fn_header[data-theme="dark"] ul.nav__hor li ul li {
+  color: #fff;
+}
+.fotofly_fn_header[data-theme="dark"] .header_helper > ul > li > a {
+  color: #fff;
+}
+.fotofly_fn_header[data-theme="dark"] .logo a .light {
+  display: block;
+}
+.fotofly_fn_header[data-theme="dark"] .logo a .dark {
+  display: none;
+}
+.fotofly_fn_header[data-theme="dark"] .hamburger .hamburger-inner::before,
+.fotofly_fn_header[data-theme="dark"] .hamburger .hamburger-inner::after,
+.fotofly_fn_header[data-theme="dark"] .hamburger .hamburger-inner {
+  background-color: #fff;
+}
+.fotofly_fn_header[data-theme="dark"] .header_helper ul li .trigger span {
+  background-color: #fff;
+}
+.fotofly_fn_header[data-theme="dark"]
+  ul.nav__hor
+  > li
+  > a.fotofly_fn_animated_link:after {
+  background-color: #fff;
+}
+.fotofly_fn_header[data-theme="dark"] .header_mobile_logo a img.light {
+  display: inline-block;
+}
+.fotofly_fn_header[data-theme="dark"] .header_mobile_logo a img.dark {
+  display: none;
+}
+
+.fotofly_fn_header[data-theme="light"] {
+  background-color: #fff;
+}
+.fotofly_fn_header[data-theme="light"] ul.nav__hor li {
+  color: #111;
+}
+.fotofly_fn_header[data-theme="light"] ul.nav__hor li ul li {
+  color: #fff;
+}
+.fotofly_fn_header[data-theme="light"] .header_helper > ul > li > a {
+  color: #111;
+}
+.fotofly_fn_header[data-theme="light"] .logo a .light {
+  display: none;
+}
+.fotofly_fn_header[data-theme="light"] .logo a .dark {
+  display: block;
+}
+.fotofly_fn_header[data-theme="light"] .hamburger .hamburger-inner::before,
+.fotofly_fn_header[data-theme="light"] .hamburger .hamburger-inner::after,
+.fotofly_fn_header[data-theme="light"] .hamburger .hamburger-inner {
+  background-color: #111;
+}
+.fotofly_fn_header[data-theme="light"] .header_helper ul li .trigger span {
+  background-color: #111;
+}
+.fotofly_fn_header[data-theme="light"]
+  ul.nav__hor
+  > li
+  > a.fotofly_fn_animated_link:after {
+  background-color: #111;
+}
+.fotofly_fn_header[data-theme="light"] .header_mobile_logo a img.light {
+  display: none;
+}
+.fotofly_fn_header[data-theme="light"] .header_mobile_logo a img.dark {
+  display: inline-block;
+}
+
+.fotofly_fn_header[data-theme="translight"] {
+  background-color: transparent;
+}
+.fotofly_fn_header[data-theme="translight"] ul.nav__hor li {
+  color: #fff;
+}
+.fotofly_fn_header[data-theme="translight"] ul.nav__hor li ul li {
+  color: #fff;
+}
+.fotofly_fn_header[data-theme="translight"] .header_helper > ul > li > a {
+  color: #fff;
+}
+.fotofly_fn_header[data-theme="translight"] .logo a .light {
+  display: block;
+}
+.fotofly_fn_header[data-theme="translight"] .logo a .dark {
+  display: none;
+}
+.fotofly_fn_header[data-theme="translight"] .hamburger .hamburger-inner::before,
+.fotofly_fn_header[data-theme="translight"] .hamburger .hamburger-inner::after,
+.fotofly_fn_header[data-theme="translight"] .hamburger .hamburger-inner {
+  background-color: #fff;
+}
+.fotofly_fn_header[data-theme="translight"] .header_helper ul li .trigger span {
+  background-color: #fff;
+}
+.fotofly_fn_header[data-theme="translight"]
+  ul.nav__hor
+  > li
+  > a.fotofly_fn_animated_link:after {
+  background-color: #fff;
+}
+.fotofly_fn_header[data-theme="translight"] .header_mobile_logo a img.light {
+  display: inline-block;
+}
+.fotofly_fn_header[data-theme="translight"] .header_mobile_logo a img.dark {
+  display: none;
+}
+
+.fotofly_fn_header[data-theme="transdark"] {
+  background-color: transparent;
+}
+.fotofly_fn_header[data-theme="transdark"] ul.nav__hor li {
+  color: #111;
+}
+.fotofly_fn_header[data-theme="transdark"] ul.nav__hor li ul li {
+  color: #fff;
+}
+.fotofly_fn_header[data-theme="transdark"] .header_helper > ul > li > a {
+  color: #111;
+}
+.fotofly_fn_header[data-theme="transdark"] .logo a .light {
+  display: none;
+}
+.fotofly_fn_header[data-theme="transdark"] .logo a .dark {
+  display: block;
+}
+.fotofly_fn_header[data-theme="transdark"] .hamburger .hamburger-inner::before,
+.fotofly_fn_header[data-theme="transdark"] .hamburger .hamburger-inner::after,
+.fotofly_fn_header[data-theme="transdark"] .hamburger .hamburger-inner {
+  background-color: #111;
+}
+.fotofly_fn_header[data-theme="transdark"] .header_helper ul li .trigger span {
+  background-color: #111;
+}
+.fotofly_fn_header[data-theme="transdark"]
+  ul.nav__hor
+  > li
+  > a.fotofly_fn_animated_link:after {
+  background-color: #111;
+}
+.fotofly_fn_header[data-theme="transdark"] .header_mobile_logo a img.light {
+  display: none;
+}
+.fotofly_fn_header[data-theme="transdark"] .header_mobile_logo a img.dark {
+  display: inline-block;
+}
+
+.fotofly_fn_header[data-theme="nonelight"] {
+  background: none;
+}
+.fotofly_fn_header[data-theme="nonelight"] ul.nav__hor li {
+  color: #fff;
+}
+.fotofly_fn_header[data-theme="nonelight"] ul.nav__hor li ul li {
+  color: #fff;
+}
+.fotofly_fn_header[data-theme="nonelight"] .header_helper > ul > li > a {
+  color: #fff;
+}
+.fotofly_fn_header[data-theme="nonelight"] .logo a .light {
+  display: block;
+}
+.fotofly_fn_header[data-theme="nonelight"] .logo a .dark {
+  display: none;
+}
+.fotofly_fn_header[data-theme="nonelight"] .hamburger .hamburger-inner::before,
+.fotofly_fn_header[data-theme="nonelight"] .hamburger .hamburger-inner::after,
+.fotofly_fn_header[data-theme="nonelight"] .hamburger .hamburger-inner {
+  background-color: #fff;
+}
+.fotofly_fn_header[data-theme="nonelight"] .header_helper ul li .trigger span {
+  background-color: #fff;
+}
+.fotofly_fn_header[data-theme="nonelight"]
+  ul.nav__hor
+  > li
+  > a.fotofly_fn_animated_link:after {
+  background-color: #fff;
+}
+.fotofly_fn_header[data-theme="nonelight"] .header_mobile_logo a img.light {
+  display: inline-block;
+}
+.fotofly_fn_header[data-theme="nonelight"] .header_mobile_logo a img.dark {
+  display: none;
+}
+
+.fotofly_fn_header[data-theme="nonedark"] {
+  background: none;
+}
+.fotofly_fn_header[data-theme="nonedark"] ul.nav__hor li {
+  color: #111;
+}
+.fotofly_fn_header[data-theme="nonedark"] ul.nav__hor li ul li {
+  color: #fff;
+}
+.fotofly_fn_header[data-theme="nonedark"] .header_helper > ul > li > a {
+  color: #111;
+}
+.fotofly_fn_header[data-theme="nonedark"] .logo a .light {
+  display: none;
+}
+.fotofly_fn_header[data-theme="nonedark"] .logo a .dark {
+  display: block;
+}
+.fotofly_fn_header[data-theme="nonedark"] .hamburger .hamburger-inner::before,
+.fotofly_fn_header[data-theme="nonedark"] .hamburger .hamburger-inner::after,
+.fotofly_fn_header[data-theme="nonedark"] .hamburger .hamburger-inner {
+  background-color: #111;
+}
+.fotofly_fn_header[data-theme="nonedark"] .header_helper ul li .trigger span {
+  background-color: #111;
+}
+.fotofly_fn_header[data-theme="nonedark"]
+  ul.nav__hor
+  > li
+  > a.fotofly_fn_animated_link:after {
+  background-color: #111;
+}
+.fotofly_fn_header[data-theme="nonedark"] .header_mobile_logo a img.light {
+  display: none;
+}
+.fotofly_fn_header[data-theme="nonedark"] .header_mobile_logo a img.dark {
+  display: inline-block;
+}
+
+.fotofly_fn_search {
+  position: absolute;
+  right: 0px;
+  top: 100%;
+  margin-top: 20px;
+
+  opacity: 0;
+  visibility: hidden;
+
+  -webkit-transition: opacity 0.5s ease, visibility 0.5s ease;
+  -moz-transition: opacity 0.5s ease, visibility 0.5s ease;
+  -ms-transition: opacity 0.5s ease, visibility 0.5s ease;
+  -o-transition: opacity 0.5s ease, visibility 0.5s ease;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.fotofly_fn_search.opened {
+  opacity: 1;
+  visibility: visible;
+}
+.fotofly_fn_search .in {
+  position: relative;
+}
+.fotofly_fn_search input {
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 48px 10px 20px !important;
+  background: #111;
+  border: none;
+  font-family: "Anonymous Pro", monospace;
+
+  -webkit-box-shadow: 1px 1px 3px rgba(235, 16, 16, 0.3);
+  -moz-box-shadow: 1px 1px 3px rgba(235, 16, 16, 0.3);
+  box-shadow: 1px 1px 3px rgba(235, 16, 16, 0.3);
+}
+.fotofly_fn_search input:hover,
+.fotofly_fn_search input:focus {
+  background: #111;
+}
+.fotofly_fn_search a {
+  display: block !important;
+  color: #ccc !important;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  z-index: 77;
+  height: 44px !important;
+  padding: 12px 10px !important;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_search a:hover {
+  color: #fff !important;
+}
+.fotofly_fn_search svg {
+  width: 18px !important;
+  height: 18px !important;
+}
+.fotofly_fn_search input[placeholder],
+.fotofly_fn_search input::-moz-placeholder,
+.fotofly_fn_search input:-moz-placeholder,
+.fotofly_fn_search input:-ms-input-placeholder {
+  color: #ccc;
+}
+/*------------------------------------------------------------------*/
+/*	03) HORIZONTAL MENU
+/*------------------------------------------------------------------*/
+ul.nav__hor > li {
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  line-height: 36px;
+}
+ul.nav__hor li a {
+  z-index: 5;
+}
+ul.nav__hor li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 250px;
+  list-style-type: none;
+  margin: 0px;
+  background-color: #111;
+  padding: 16px 0px;
+  z-index: 10;
+
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-box-shadow: 1px 1px 3px rgba(235, 16, 16, 0.3);
+  -moz-box-shadow: 1px 1px 3px rgba(235, 16, 16, 0.3);
+  box-shadow: 1px 1px 3px rgba(235, 16, 16, 0.3);
+
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  transform: translateY(20px);
+
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+ul.nav__hor li ul.reversed {
+  left: auto;
+  right: 0px;
+}
+ul.nav__hor li ul ul {
+  top: 0px;
+  left: 100%;
+}
+ul.nav__hor li ul ul.reversed {
+  left: auto;
+  right: 100%;
+}
+ul.nav__hor li ul li {
+  position: relative;
+  width: 100%;
+  margin: 0px;
+  padding: 0px 27px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.header_mobile_logo {
+  float: left;
+  display: none;
+}
+.header_mobile_logo a img.light {
+  display: block;
+}
+.header_mobile_logo a img.dark {
+  display: none;
+}
+
+.fotofly_fn_vertmenu {
+  position: fixed;
+  width: 360px;
+  height: auto;
+  top: 0px;
+  right: -360px;
+  z-index: 1010;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.fotofly_fn_vertmenu_content {
+  position: relative;
+  z-index: 1020;
+  background-color: #000;
+}
+.fotofly_fn_vertmenu .vertmenu_secondary {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1025;
+  width: 100%;
+  height: 68px;
+  background-color: #000;
+}
+.fotofly_fn_vertmenu_left {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1005;
+  background-color: rgba(17, 17, 17, 0.3);
+  cursor: none;
+  right: 100%;
+
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_vertmenu_left.opened {
+  right: 0px;
+}
+.fotofly_fn_vertmenu.opened {
+  right: 0px;
+}
+.fotofly_fn_vertmenu .vertmenu_content {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+#floatingmes {
+  color: #fff;
+  position: absolute;
+  z-index: 1018;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: none;
+}
+.fotofly_fn_vertmenu .mCSB_inside > .mCSB_container {
+  margin: 0px;
+}
+.fotofly_fn_vertmenu .vertmenu {
+  width: 100%;
+  padding: 80px 0px;
+  float: left;
+  clear: both;
+  position: relative;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_vertmenu .vertmenu .vert_lorem {
+  margin-bottom: 24px;
+  padding: 0px 40px;
+  margin-top: -7px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_vertmenu .vertmenu .vert_lorem p {
+  display: block;
+  line-height: 1.6;
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: #ccc;
+}
+.fotofly_fn_vertmenu .vertmenu .vert_sign {
+  margin-bottom: 52px;
+  padding: 0px 40px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+ul.vert_menu_list {
+  list-style-type: none;
+  margin: 0px;
+  margin-bottom: 60px;
+}
+ul.vert_menu_list > li {
+  margin: 0px;
+  width: 100%;
+  position: relative;
+  padding: 0px 40px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+ul.vert_menu_list > li:after {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 1px;
+  background-color: #fff;
+  left: 0px;
+  top: 24px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+ul.vert_menu_list > li:before {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 1px;
+  background-color: #fff;
+  right: 0px;
+  top: 24px;
+  display: none;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+ul.vert_menu_list > li:hover:after,
+ul.vert_menu_list > li:first-child:after,
+ul.vert_menu_list > li:hover:before,
+ul.vert_menu_list > li:first-child:before {
+  width: 25px;
+}
+
+ul.vert_menu_list > li > a {
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 3.5;
+  letter-spacing: 0.75px;
+  display: block;
+  color: #fff;
+  font-family: "Poppins";
+}
+ul.vert_menu_list li ul {
+  list-style-type: none;
+  display: none;
+  margin: 15px 0px 15px 15px;
+}
+ul.vert_menu_list li ul li {
+  margin-bottom: 11px;
+}
+ul.vert_menu_list li ul li:last-child {
+  margin-bottom: 0px;
+}
+ul.vert_menu_list li ul li a {
+  font-size: 13px;
+  text-decoration: none;
+  font-family: "Poppins";
+  color: #aaa;
+  letter-spacing: 0.75px;
+  line-height: 1.2;
+  display: block;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ul.vert_menu_list li ul li a:hover {
+  color: #fff;
+}
+.fotofly_fn_vertmenu .vertmenu .vert_instagram {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding: 0px 40px;
+  margin-bottom: 3px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_vertmenu .vertmenu .vert_instagram .inst {
+  width: 100%;
+  float: left;
+  text-align: left;
+  margin-bottom: 4px;
+}
+.fotofly_fn_vertmenu .vertmenu .vert_instagram ul {
+  list-style-type: none;
+  margin: 0px;
+  margin-left: -20px;
+}
+.fotofly_fn_vertmenu .vertmenu .vert_instagram ul li {
+  margin: 0px;
+  width: 33.3333%;
+  float: left;
+  padding-left: 20px;
+  margin-bottom: 20px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_vertmenu .vertmenu .vert_instagram ul li a {
+  display: block;
+  text-decoration: none;
+}
+.fotofly_fn_vertmenu .vertmenu .vert_instagram > a {
+  font-size: 15px;
+  text-decoration: none;
+  letter-spacing: 0px;
+  line-height: 1;
+  color: #666;
+  border-bottom: 1px solid #666;
+  padding-bottom: 4px;
+}
+.fotofly_fn_vertmenu .vertmenu .vert_instagram > a:hover {
+  border-bottom-color: transparent;
+}
+/*------------------------------------------------------------------*/
+/*	04) MOBILE MENU
+/*------------------------------------------------------------------*/
+.fotofly_fn_mobilemenu_wrap {
+  width: 100%;
+  clear: both;
+  height: auto;
+  background-color: #111;
+  display: none;
+}
+.fotofly_fn_mobilemenu {
+  width: 100%;
+  clear: both;
+  height: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px 0px;
+  background-color: #111;
+}
+.fotofly_fn_mobilemenu_wrap ul.vert_menu_list {
+  margin-bottom: 0px;
+}
+.fotofly_fn_mobilemenu_wrap ul.vert_menu_list > li:after {
+  display: none;
+}
+.fotofly_fn_mobilemenu_wrap ul.vert_menu_list > li {
+  padding: 0px;
+}
+.fotofly_fn_mobilemenu_wrap ul.vert_menu_list li a i {
+  display: none;
+}
+.fotofly_fn_mobilemenu_wrap ul.vert_menu_list li ul li a {
+  font-size: 14px;
+}
+/*------------------------------------------------------------------*/
+/*	05) HEADER #1
+/*------------------------------------------------------------------*/
+.fotofly_fn_header__one {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: auto;
+  position: relative;
+  background-color: #111;
+
+  z-index: 1000;
+}
+.fotofly_fn_header__one_content {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: auto;
+  padding: 16px 50px 10px;
+  position: relative;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_header__one .header__one_inner {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: auto;
+  position: relative;
+}
+.fotofly_fn_header__one .header_list {
+  text-align: left;
+  width: 100%;
+  min-height: 36px;
+  position: relative;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_header__one .logo {
+  margin: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.fotofly_fn_header__one .logo a {
+  display: block;
+  text-decoration: none;
+}
+.fotofly_fn_header__one ul.nav__hor {
+  list-style-type: none;
+  margin: 0px;
+  display: inline-block;
+  float: left;
+}
+.navigation {
+  width: 100%;
+  padding-left: 200px;
+  float: left;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.navigation .header_helper {
+  position: relative;
+  top: auto;
+  right: auto;
+  float: right;
+}
+
+.navigation[data-menu-align="left"] ul.nav__hor {
+  float: left;
+}
+.navigation[data-menu-align="right"] ul.nav__hor {
+  text-align: right;
+}
+.navigation[data-menu-align="right"] ul.nav__hor > li {
+  float: none;
+}
+.navigation[data-menu-align="center"] ul.nav__hor {
+  text-align: center;
+}
+.navigation[data-menu-align="center"] ul.nav__hor > li {
+  float: none;
+}
+
+.fotofly_fn_header__one.absolute {
+  position: absolute;
+  background-color: transparent;
+}
+.fotofly_fn_header__one.relative {
+  position: relative;
+}
+.fotofly_fn_header__one.fixed {
+  position: fixed;
+}
+
+.fotofly_fn_header__one[data-theme="dark"] {
+  background-color: #111;
+}
+.fotofly_fn_header__one[data-theme="dark"] ul.nav__hor li {
+  color: #fff;
+}
+.fotofly_fn_header__one[data-theme="dark"] ul.nav__hor li ul li {
+  color: #fff;
+}
+.fotofly_fn_header__one[data-theme="dark"] .header_helper > ul > li > a {
+  color: #fff;
+}
+.fotofly_fn_header__one[data-theme="dark"] .logo a .light {
+  display: block;
+}
+.fotofly_fn_header__one[data-theme="dark"] .logo a .dark {
+  display: none;
+}
+.fotofly_fn_header__one[data-theme="dark"] .hamburger .hamburger-inner::before,
+.fotofly_fn_header__one[data-theme="dark"] .hamburger .hamburger-inner::after,
+.fotofly_fn_header__one[data-theme="dark"] .hamburger .hamburger-inner {
+  background-color: #fff;
+}
+.fotofly_fn_header__one[data-theme="dark"] .header_helper ul li .trigger span {
+  background-color: #fff;
+}
+.fotofly_fn_header__one[data-theme="dark"]
+  ul.nav__hor
+  > li
+  > a.fotofly_fn_animated_link:after {
+  background-color: #fff;
+}
+
+.fotofly_fn_header__one[data-theme="light"] {
+  background-color: #fff;
+}
+.fotofly_fn_header__one[data-theme="light"] ul.nav__hor li {
+  color: #111;
+}
+.fotofly_fn_header__one[data-theme="light"] ul.nav__hor li ul li {
+  color: #fff;
+}
+.fotofly_fn_header__one[data-theme="light"] .header_helper > ul > li > a {
+  color: #111;
+}
+.fotofly_fn_header__one[data-theme="light"] .logo a .light {
+  display: none;
+}
+.fotofly_fn_header__one[data-theme="light"] .logo a .dark {
+  display: block;
+}
+.fotofly_fn_header__one[data-theme="light"] .hamburger .hamburger-inner::before,
+.fotofly_fn_header__one[data-theme="light"] .hamburger .hamburger-inner::after,
+.fotofly_fn_header__one[data-theme="light"] .hamburger .hamburger-inner {
+  background-color: #111;
+}
+.fotofly_fn_header__one[data-theme="light"] .header_helper ul li .trigger span {
+  background-color: #111;
+}
+.fotofly_fn_header__one[data-theme="light"]
+  ul.nav__hor
+  > li
+  > a.fotofly_fn_animated_link:after {
+  background-color: #111;
+}
+
+.fotofly_fn_header__one[data-theme="translight"] {
+  background-color: transparent;
+}
+.fotofly_fn_header__one[data-theme="translight"] ul.nav__hor li {
+  color: #fff;
+}
+.fotofly_fn_header__one[data-theme="translight"] ul.nav__hor li ul li {
+  color: #fff;
+}
+.fotofly_fn_header__one[data-theme="translight"] .header_helper > ul > li > a {
+  color: #fff;
+}
+.fotofly_fn_header__one[data-theme="translight"] .logo a .light {
+  display: block;
+}
+.fotofly_fn_header__one[data-theme="translight"] .logo a .dark {
+  display: none;
+}
+.fotofly_fn_header__one[data-theme="translight"]
+  .hamburger
+  .hamburger-inner::before,
+.fotofly_fn_header__one[data-theme="translight"]
+  .hamburger
+  .hamburger-inner::after,
+.fotofly_fn_header__one[data-theme="translight"] .hamburger .hamburger-inner {
+  background-color: #fff;
+}
+.fotofly_fn_header__one[data-theme="translight"]
+  .header_helper
+  ul
+  li
+  .trigger
+  span {
+  background-color: #fff;
+}
+.fotofly_fn_header__one[data-theme="translight"]
+  ul.nav__hor
+  > li
+  > a.fotofly_fn_animated_link:after {
+  background-color: #fff;
+}
+
+.fotofly_fn_header__one[data-theme="transdark"] {
+  background-color: transparent;
+}
+.fotofly_fn_header__one[data-theme="transdark"] ul.nav__hor li {
+  color: #111;
+}
+.fotofly_fn_header__one[data-theme="transdark"] ul.nav__hor li ul li {
+  color: #fff;
+}
+.fotofly_fn_header__one[data-theme="transdark"] .header_helper > ul > li > a {
+  color: #111;
+}
+.fotofly_fn_header__one[data-theme="transdark"] .logo a .light {
+  display: none;
+}
+.fotofly_fn_header__one[data-theme="transdark"] .logo a .dark {
+  display: block;
+}
+.fotofly_fn_header__one[data-theme="transdark"]
+  .hamburger
+  .hamburger-inner::before,
+.fotofly_fn_header__one[data-theme="transdark"]
+  .hamburger
+  .hamburger-inner::after,
+.fotofly_fn_header__one[data-theme="transdark"] .hamburger .hamburger-inner {
+  background-color: #111;
+}
+.fotofly_fn_header__one[data-theme="transdark"]
+  .header_helper
+  ul
+  li
+  .trigger
+  span {
+  background-color: #111;
+}
+.fotofly_fn_header__one[data-theme="transdark"]
+  ul.nav__hor
+  > li
+  > a.fotofly_fn_animated_link:after {
+  background-color: #111;
+}
+
+.fotofly_fn_header__one[data-theme="nonelight"] {
+  background: none;
+}
+.fotofly_fn_header__one[data-theme="nonelight"] ul.nav__hor li {
+  color: #fff;
+}
+.fotofly_fn_header__one[data-theme="nonelight"] ul.nav__hor li ul li {
+  color: #fff;
+}
+.fotofly_fn_header__one[data-theme="nonelight"] .header_helper > ul > li > a {
+  color: #fff;
+}
+.fotofly_fn_header__one[data-theme="nonelight"] .logo a .light {
+  display: block;
+}
+.fotofly_fn_header__one[data-theme="nonelight"] .logo a .dark {
+  display: none;
+}
+.fotofly_fn_header__one[data-theme="nonelight"]
+  .hamburger
+  .hamburger-inner::before,
+.fotofly_fn_header__one[data-theme="nonelight"]
+  .hamburger
+  .hamburger-inner::after,
+.fotofly_fn_header__one[data-theme="nonelight"] .hamburger .hamburger-inner {
+  background-color: #fff;
+}
+.fotofly_fn_header__one[data-theme="nonelight"]
+  .header_helper
+  ul
+  li
+  .trigger
+  span {
+  background-color: #fff;
+}
+.fotofly_fn_header__one[data-theme="nonelight"]
+  ul.nav__hor
+  > li
+  > a.fotofly_fn_animated_link:after {
+  background-color: #fff;
+}
+
+.fotofly_fn_header__one[data-theme="nonedark"] {
+  background: none;
+}
+.fotofly_fn_header__one[data-theme="nonedark"] ul.nav__hor li {
+  color: #111;
+}
+.fotofly_fn_header__one[data-theme="nonedark"] ul.nav__hor li ul li {
+  color: #fff;
+}
+.fotofly_fn_header__one[data-theme="nonedark"] .header_helper > ul > li > a {
+  color: #111;
+}
+.fotofly_fn_header__one[data-theme="nonedark"] .logo a .light {
+  display: none;
+}
+.fotofly_fn_header__one[data-theme="nonedark"] .logo a .dark {
+  display: block;
+}
+.fotofly_fn_header__one[data-theme="nonedark"]
+  .hamburger
+  .hamburger-inner::before,
+.fotofly_fn_header__one[data-theme="nonedark"]
+  .hamburger
+  .hamburger-inner::after,
+.fotofly_fn_header__one[data-theme="nonedark"] .hamburger .hamburger-inner {
+  background-color: #111;
+}
+.fotofly_fn_header__one[data-theme="nonedark"]
+  .header_helper
+  ul
+  li
+  .trigger
+  span {
+  background-color: #111;
+}
+.fotofly_fn_header__one[data-theme="nonedark"]
+  ul.nav__hor
+  > li
+  > a.fotofly_fn_animated_link:after {
+  background-color: #111;
+}
+
+/*------------------------------------------------------------------*/
+/*	06) HAMBURGER MENU
+/*------------------------------------------------------------------*/
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+.hamburger-box {
+  width: 30px;
+  height: 18px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  display: block;
+}
+.hamburger-inner::before {
+  top: -8px;
+}
+.hamburger-inner::after {
+  bottom: -10px;
+}
+.hamburger--collapse-r .hamburger-inner {
+  top: auto;
+  bottom: 0;
+  transition-duration: 0.13s;
+  transition-delay: 0.13s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--collapse-r .hamburger-inner::after {
+  top: -16px;
+  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+    opacity 0.1s linear;
+}
+.hamburger--collapse-r .hamburger-inner::before {
+  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+    transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--collapse-r.is-active .hamburger-inner {
+  transform: translate3d(0, -10px, 0) rotate(45deg);
+  transition-delay: 0.22s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.hamburger--collapse-r.is-active .hamburger-inner::after {
+  top: 0;
+  opacity: 0;
+  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+    opacity 0.1s 0.22s linear;
+}
+.hamburger--collapse-r.is-active .hamburger-inner::before {
+  top: 0;
+  transform: rotate(90deg);
+  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+    transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.hamburger {
+  padding: 0px;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+.hamburger-box {
+  display: block;
+}
+
+.hamburger .hamburger-inner::before,
+.hamburger .hamburger-inner::after,
+.hamburger .hamburger-inner {
+  background-color: #fff;
+  width: 30px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header_helper ul li.mobile_trigger {
+  display: none;
+}
+/*------------------------------------------------------------------*/
+/*	07) FLEXSLIDER
+/*------------------------------------------------------------------*/
+.fotofly_fn_mainslider {
+  width: 100%;
+  float: left;
+  height: 100vh;
+  clear: both;
+}
+.fotofly_fn_mainslider ul.slides > li {
+  margin: 0px;
+  overflow: hidden;
+  position: relative;
+  background: #000;
+}
+
+.fotofly_fn_mainslider .flexslider ul li:nth-child(1) .overlay_img {
+  background-image: url(../img/122.jpg);
+}
+.fotofly_fn_mainslider .flexslider ul li:nth-child(2) .overlay_img {
+  background-image: url(../img/123.jpg);
+}
+.fotofly_fn_mainslider .flexslider ul li:nth-child(3) .overlay_img {
+  background-image: url(../img/120.png);
+}
+.fotofly_fn_mainslider .flexslider ul li:nth-child(4) .overlay_img {
+  background-image: url(../img/main_slider/4.jpg);
+}
+.fotofly_fn_mainslider .flexslider ul li:nth-child(5) .overlay_img {
+  background-image: url(../img/main_slider/5.jpg);
+}
+.fotofly_fn_mainslider .flexslider ul li:nth-child(6) .overlay_img {
+  background-image: url(../img/main_slider/6.jpg);
+}
+
+.fotofly_fn_mainslider .flexslider ul li .overlay {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 5;
+}
+.fotofly_fn_mainslider .flexslider ul li .overlay_img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 10;
+}
+.fotofly_fn_mainslider .flexslider ul li .overlay_color {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 15;
+}
+.flex-direction-nav li {
+  margin: 0px;
+}
+.flex-direction-nav a.flex-prev {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.flex-direction-nav a:before,
+.flex-direction-nav .myflex-text {
+  display: none;
+}
+.flex-direction-nav a {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.flex-direction-nav .myflex-nav {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 29px;
+  margin-left: 19px;
+  position: relative;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.flex-direction-nav .myflex-nav.next {
+  margin-left: auto;
+  margin-right: 19px;
+}
+.flex-direction-nav .myflex-nav:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0px;
+  top: -4px;
+  width: 10px;
+  height: 2px;
+  background-color: #fff;
+
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.flex-direction-nav .myflex-nav:before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0px;
+  top: 4px;
+  width: 10px;
+  height: 2px;
+  background-color: #fff;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.flex-direction-nav .myflex-nav.next:after {
+  left: auto;
+  right: 0px;
+  top: 4px;
+}
+.flex-direction-nav .myflex-nav.next:before {
+  left: auto;
+  right: 0px;
+  top: -4px;
+}
+
+.flexslider:hover .flex-direction-nav a:hover .myflex-nav.prev {
+  margin-left: 9px;
+}
+.flexslider:hover .flex-direction-nav a:hover .myflex-nav.next {
+  margin-right: 9px;
+}
+.fotofly_fn_mainslider .flexslider ul.slides > li {
+  height: 100vh;
+}
+/*------------------------------------------------------------------*/
+/*	08) PORTFOLIO LIST IN HOMEPAGE
+/*------------------------------------------------------------------*/
+.fotofly_fn_portfolio_wrap,
+.fotofly_fn_portfolio_content,
+.fotofly_fn_portfolio {
+  width: 100%;
+  float: left;
+  height: auto;
+  clear: both;
+}
+.fotofly_fn_portfolio_wrap {
+  background-color: #f5f5f5;
+}
+.fotofly_fn_portfolio_content {
+  padding: 120px 130px 0px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_portfolio {
+  position: relative;
+}
+.fotofly_fn_title {
+  text-align: center;
+  clear: both;
+  margin-bottom: 70px;
+}
+.fotofly_fn_title_content span {
+  font-family: "Poppins";
+  display: inline-block;
+  padding: 23px 69px 20px 69px;
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 0px;
+  line-height: 1;
+  color: #111;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  background-image: url(../img/title-bg.jpg);
+  background-repeat: repeat;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+.portfolio_list_wrap,
+.portfolio_list {
+  width: 100%;
+  float: left;
+  height: auto;
+  clear: both;
+}
+.portfolio_list_wrap ul {
+  list-style-type: none;
+  margin: 0px;
+  margin-left: -80px;
+}
+.portfolio_list_wrap ul li {
+  margin: 0px;
+  width: 33.3333%;
+  float: left;
+  padding-left: 80px;
+  margin-bottom: 65px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.portfolio_list_wrap ul li .port_list_single {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.portfolio_list_wrap ul li .port_img {
+  width: 100%;
+  overflow: hidden;
+}
+.portfolio_list_wrap ul li .port_list_single .port_cat {
+  float: left;
+  display: block;
+  position: absolute;
+  bottom: 30px;
+  left: -30px;
+}
+.portfolio_list_wrap ul li .port_list_single .port_cat a {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  display: block;
+  text-decoration: none;
+
+  background-color: #111;
+  padding: 28px 94px 25px 39px;
+  min-width: 137px; /* 94+39=133 270-137=133 */
+
+  -webkit-box-shadow: 1px 1px 3px rgba(235, 16, 16, 0.3);
+  -moz-box-shadow: 1px 1px 3px rgba(235, 16, 16, 0.3);
+  box-shadow: 1px 1px 3px rgba(235, 16, 16, 0.3);
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.portfolio_list_wrap ul li .port_list_single .port_cat .text {
+  font-size: 22px;
+  letter-spacing: 0px;
+  line-height: 1;
+  color: #fffefe;
+  display: inline-block;
+  position: relative;
+}
+.portfolio_list_wrap ul li .port_list_single .port_cat .line {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-left: 29px;
+  margin-top: -2px;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.portfolio_list_wrap ul li .port_list_single .port_cat .line:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -4px;
+  right: 0px;
+  width: 10px;
+  height: 2px;
+  background-color: #fff;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.portfolio_list_wrap ul li .port_list_single .port_cat .line:after {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 0px;
+  top: 4px;
+  width: 10px;
+  height: 2px;
+  background-color: #fff;
+
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.portfolio_list_wrap ul li .port_list_single:hover .line {
+  margin-left: 49px;
+}
+
+.portfolio_list_wrap[data-col="5"] ul li {
+  width: 20%;
+}
+.portfolio_list_wrap[data-col="4"] ul li {
+  width: 25%;
+}
+.portfolio_list_wrap[data-col="2"] ul li {
+  width: 45%;
+}
+
+.portfolio_btn {
+  float: left;
+  display: block;
+  width: 100%;
+  text-align: center;
+  min-height: 24px;
+}
+.portfolio_btn a {
+  text-decoration: none;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  color: #eb1010;
+  position: relative;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eb1010;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.portfolio_btn a:hover {
+  border-bottom-color: transparent;
+}
+/*------------------------------------------------------------------*/
+/*	09) BREADCRUMBS
+/*------------------------------------------------------------------*/
+.fotofly_fn_breadcrumbs {
+  width: 100%;
+  clear: both;
+  background-color: #f5f5f5;
+  padding: 68px 0px 67px 0px;
+}
+.fotofly_fn_breadcrumbs_content {
+  text-align: center;
+}
+.fotofly_fn_breadcrumbs p {
+  font-size: 15px;
+  letter-spacing: 0px;
+  line-height: 1;
+  color: #555;
+}
+.fotofly_fn_breadcrumbs p a {
+  text-decoration: none;
+  color: #555;
+  position: relative;
+}
+.fotofly_fn_breadcrumbs p a:after {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: -3px;
+  left: 100%;
+  background-color: #555;
+
+  -webkit-transition: left 0.5s ease, width 0.5s ease;
+  -moz-transition: left 0.5s ease, width 0.5s ease;
+  -ms-transition: left 0.5s ease, width 0.5s ease;
+  -o-transition: left 0.5s ease, width 0.5s ease;
+  transition: left 0.5s ease, width 0.5s ease;
+}
+.fotofly_fn_breadcrumbs p a:hover:after {
+  width: 100%;
+  left: 0;
+
+  -webkit-transition: width 0.5s ease;
+  -moz-transition: width 0.5s ease;
+  -ms-transition: width 0.5s ease;
+  -o-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+.fotofly_fn_breadcrumbs p span {
+  color: #999;
+}
+/*------------------------------------------------------------------*/
+/*	10) BLOG
+/*------------------------------------------------------------------*/
+.fotofly_fn_blog_wrap {
+  width: 100%;
+  clear: both;
+  height: auto;
+  background-color: #f5f5f5;
+  float: left;
+  padding: 0px 60px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_blog_wrap .blog_wrapper {
+  width: 100%;
+  clear: both;
+}
+.fotofly_fn_blog_wrap .blog_content {
+  float: left;
+  clear: both;
+  width: 100%;
+  height: auto;
+  margin-bottom: 80px;
+}
+.fotofly_fn_blog_wrap .blog_wrapper ul.mypost {
+  list-style-type: none;
+  margin: 0px;
+  margin-left: -80px;
+}
+.fotofly_fn_blog_wrap .blog_wrapper ul.mypost li {
+  margin: 0px;
+  width: 33.3333%;
+  padding-left: 80px;
+  margin-bottom: 55px;
+  float: left;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_blog_wrap .blog_wrapper ul.mypost li .post {
+  width: 100%;
+}
+.fotofly_fn_blog_wrap .blog_wrapper ul.mypost li .img_holder {
+  clear: both;
+}
+.fotofly_fn_blog_wrap .blog_wrapper ul.mypost li .img_holder a {
+  text-decoration: none;
+  display: block;
+}
+.fotofly_fn_blog_wrap .blog_wrapper ul.mypost li .title_holder {
+  width: 100%;
+  padding: 23px 0px 19px 0px;
+}
+.fotofly_fn_blog_wrap .blog_wrapper ul.mypost li .title_holder > span {
+  display: block;
+  clear: both;
+  width: 100%;
+  float: left;
+  font-size: 15px;
+  color: #555;
+  letter-spacing: 0px;
+  line-height: 1;
+  margin-bottom: 21px;
+}
+.fotofly_fn_blog_wrap .blog_wrapper ul.mypost li .title_holder a.category {
+  text-decoration: none;
+  display: inline-block;
+  float: left;
+  color: #555;
+  border-bottom: 1px solid transparent;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.fotofly_fn_blog_wrap
+  .blog_wrapper
+  ul.mypost
+  li
+  .title_holder
+  a.category:hover {
+  border-bottom-color: #555;
+}
+.fotofly_fn_blog_wrap .blog_wrapper ul.mypost li .title_holder .date {
+  display: inline-block;
+  float: right;
+}
+.fotofly_fn_blog_wrap .blog_wrapper ul.mypost li .title_holder h3 {
+  font-size: 18px;
+  margin: 0px;
+  letter-spacing: 0px;
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+.fotofly_fn_blog_wrap .blog_wrapper ul.mypost li .title_holder p {
+  font-size: 15px;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  color: #555;
+}
+/*------------------------------------------------------------------*/
+/*	11) SPLIT PAGE
+/*------------------------------------------------------------------*/
+.fotofly_fn_page_splitscreen {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.fotofly_fn_page_splitleft {
+  width: 50%;
+  height: auto;
+  min-height: 1px;
+  float: left;
+  position: fixed;
+  overflow: hidden;
+}
+.fotofly_fn_page_splitleft .splitscreen_title {
+  position: absolute;
+  z-index: 110;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: table;
+}
+.fotofly_fn_page_splitleft .splitscreen_title .in {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.fotofly_fn_page_splitleft .title_holder {
+  display: inline-block;
+  position: relative;
+  padding: 0px 20px;
+  max-width: 400px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.fotofly_fn_page_splitleft .title_holder h1 {
+  color: #fff;
+  position: relative;
+  margin: 0px;
+  font-size: 36px;
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: 0px;
+  margin-bottom: 11px;
+  font-weight: 400;
+}
+.fotofly_fn_page_splitleft .title_holder p {
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: #ccc;
+}
+.fotofly_fn_page_splitleft .splitscreen_title_back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 100;
+}
+.fotofly_fn_page_splitleft .splitscreen_title_back .bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 5;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fotofly_fn_page_splitright {
+  width: 50%;
+  float: right;
+  overflow-y: scroll;
+}
+.fotofly_fn_page_splitright {
+  background-color: #f5f5f5;
+}
+/*------------------------------------------------------------------*/
+/*	12) PORTFOLIO #1
+/*------------------------------------------------------------------*/
+.fotofly_fn_portfolio_second {
+  width: 100%;
+  clear: both;
+  padding: 0px 50px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_portfolio_second .portfolio_second {
+  width: 100%;
+  float: left;
+}
+.fotofly_fn_portfolio_second .list {
+  width: 100%;
+  float: left;
+  margin-bottom: 80px;
+}
+.fotofly_fn_portfolio_second_inner {
+  max-width: 800px;
+  margin: 0px auto;
+}
+.portfolio_second_list {
+  list-style-type: none;
+  margin: 0px;
+  margin-left: -80px;
+}
+.portfolio_second_list li {
+  margin: 0px;
+  width: 50%;
+  float: left;
+  padding-left: 80px;
+  margin-bottom: 80px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.portfolio_second_list .single {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.portfolio_second_list .single .img_holder {
+  position: relative;
+  z-index: 10;
+}
+.portfolio_second_list .single .title_holder {
+  position: absolute;
+  width: 100%;
+  bottom: 21px;
+  left: 0px;
+  z-index: 20;
+  padding: 0px 25px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.portfolio_second_list .single .title_holder > span {
+  display: block;
+  margin-bottom: 4px;
+}
+.portfolio_second_list .single .title_holder > span a {
+  font-size: 15px;
+  letter-spacing: 0px;
+  line-height: 1;
+  color: #ccc;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.portfolio_second_list .single .title_holder > span a:hover {
+  border-bottom-color: #ccc;
+}
+.portfolio_second_list .single .title_holder > h3 {
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0px;
+  margin: 0px;
+  font-weight: 500;
+}
+.portfolio_second_list .single .title_holder > h3 a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+.portfolio_second_list .single .title_holder > h3 a:hover {
+  color: #eb1010;
+}
+.fotofly_fn_page_splitscreen.portfolio_page
+  .fotofly_fn_page_splitleft
+  .splitscreen_title_back
+  .bg {
+  background-image: url("https://res.cloudinary.com/dq3pwfv9f/image/upload/v1751107359/Untitled_design_6_g16msu.png");
+}
+.fotofly_fn_portfolio_second[data-title-style="separately"]
+  .single
+  .title_holder {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  padding: 0px;
+  padding-top: 23px;
+}
+.fotofly_fn_portfolio_second[data-title-style="separately"]
+  .single
+  .title_holder
+  > span
+  a {
+  color: #555;
+}
+.fotofly_fn_portfolio_second[data-title-style="separately"]
+  .single
+  .title_holder
+  > span
+  a:hover {
+  border-bottom-color: #555;
+}
+.fotofly_fn_portfolio_second[data-title-style="separately"]
+  .single
+  .title_holder
+  > h3
+  a {
+  color: #111;
+}
+.fotofly_fn_portfolio_second[data-title-style="separately"]
+  .single
+  .title_holder
+  > h3
+  a:hover {
+  color: #eb1010;
+}
+
+/*------------------------------------------------------------------*/
+/*	13) PORTFOLIO #2
+/*------------------------------------------------------------------*/
+.fotofly_fn_portfolio_third {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: auto;
+  background-color: #f5f5f5;
+}
+.fotofly_fn_portfolio_third_inner {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: auto;
+}
+.fotofly_fn_portfolio_third .portfolio_third {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: auto;
+  padding: 139px 40px 0px 40px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_portfolio_third .title_holder {
+  margin-bottom: 97px;
+}
+.fotofly_fn_portfolio_third .title_holder h3 {
+  font-size: 48px;
+  line-height: 1.3;
+  margin: 0px;
+  letter-spacing: 0px;
+  margin-bottom: 17px;
+}
+.fotofly_fn_portfolio_third .title_holder p {
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: #555;
+}
+.fotofly_fn_portfolio_third .list_holder {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: auto;
+  margin-bottom: 40px;
+}
+.fotofly_fn_portfolio_third .list_holder ul {
+  list-style-type: none;
+  margin: 0px;
+  margin-left: -80px;
+}
+.fotofly_fn_portfolio_third .list_holder ul li {
+  margin: 0px;
+  width: 33.3333%;
+  padding-left: 80px;
+  margin-bottom: 80px;
+  float: left;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_portfolio_third .list_holder .list {
+  width: 100%;
+  position: relative;
+  float: left;
+}
+.fotofly_fn_portfolio_third .list_holder .list .img {
+  position: relative;
+  z-index: 10;
+}
+.fotofly_fn_portfolio_third .list_holder .list .title {
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+  bottom: 21px;
+  left: 0px;
+  padding: 0px 25px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_portfolio_third .list_holder .list .title > span {
+  display: block;
+  margin-bottom: 4px;
+}
+.fotofly_fn_portfolio_third .list_holder .list .title > span a {
+  font-size: 15px;
+  letter-spacing: 0px;
+  line-height: 1;
+  color: #ccc;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.fotofly_fn_portfolio_third .list_holder .list .title > span a:hover {
+  border-bottom-color: #ccc;
+}
+.fotofly_fn_portfolio_third .list_holder .list .title h3 {
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0px;
+  margin: 0px;
+  font-weight: 500;
+}
+.fotofly_fn_portfolio_third .list_holder .list .title h3 a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+.fotofly_fn_portfolio_third .list_holder .list .title h3 a:hover {
+  color: #eb1010;
+}
+.fotofly_fn_portfolio_third[data-title-style="separately"]
+  .list_holder
+  .list
+  .title {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  padding: 0px;
+  padding-top: 23px;
+}
+.fotofly_fn_portfolio_third[data-title-style="separately"]
+  .list_holder
+  .list
+  .title
+  > span
+  a {
+  color: #555;
+}
+.fotofly_fn_portfolio_third[data-title-style="separately"]
+  .list_holder
+  .list
+  .title
+  > span
+  a:hover {
+  border-bottom-color: #555;
+}
+.fotofly_fn_portfolio_third[data-title-style="separately"]
+  .list_holder
+  .list
+  .title
+  > h3
+  a {
+  color: #111;
+}
+.fotofly_fn_portfolio_third[data-title-style="separately"]
+  .list_holder
+  .list
+  .title
+  > h3
+  a:hover {
+  color: #eb1010;
+}
+/*------------------------------------------------------------------*/
+/*	14) PORTFOLIO #3
+/*------------------------------------------------------------------*/
+.fotofly_fn_portfolio_third .list_holder.portfolio_fourth {
+  padding: 0px 80px;
+  width: 100%;
+  margin: 0px auto;
+  max-width: 1920px;
+  float: none;
+  clear: both;
+  margin-bottom: 40px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+/*------------------------------------------------------------------*/
+/*	15) PORTFOLIO SINGLE
+/*------------------------------------------------------------------*/
+.fotofly_fn_portfolio_single {
+  float: left;
+  width: 100%;
+  clear: both;
+  background-color: #f5f5f5;
+}
+.fotofly_fn_page_splitscreen.page_single_portfolio.dark-arbour
+  .fotofly_fn_page_splitleft
+  .splitscreen_title_back
+  .bg {
+  background-image: url("https://res.cloudinary.com/dbylngblb/image/upload/v1751202812/IMG20230116061221_cwtte4.jpg");
+}
+
+.fotofly_fn_page_splitscreen.page_single_portfolio.green
+  .fotofly_fn_page_splitleft
+  .splitscreen_title_back
+  .bg {
+  background-image: url("https://res.cloudinary.com/dbylngblb/image/upload/v1751203148/IMG20220531145347_axpoac.jpg");
+}
+
+.fotofly_fn_page_splitscreen.page_single_portfolio.mandirs
+  .fotofly_fn_page_splitleft
+  .splitscreen_title_back
+  .bg {
+  background-image: url("https://res.cloudinary.com/dbylngblb/image/upload/v1751204483/IMG20240707091511_htpm8r.jpg");
+}
+
+.fotofly_fn_page_splitscreen.page_single_portfolio.birds
+  .fotofly_fn_page_splitleft
+  .splitscreen_title_back
+  .bg {
+  background-image: url("https://res.cloudinary.com/dbylngblb/image/upload/v1751203585/IMG20250131174730_v0grze.jpg");
+}
+
+.fotofly_fn_page_splitscreen.page_single_portfolio.sunset
+  .fotofly_fn_page_splitleft
+  .splitscreen_title_back
+  .bg {
+  background-image: url("https://res.cloudinary.com/dbylngblb/image/upload/v1751203858/IMG20230218173121_qcrclh.jpg");
+}
+
+.fotofly_fn_page_splitscreen.page_single_portfolio
+  .fotofly_fn_page_splitleft
+  .title_holder
+  > span {
+  display: block;
+  color: #ccc;
+  font-size: 15px;
+  letter-spacing: 0px;
+  line-height: 1.5;
+}
+.fotofly_fn_page_splitscreen.page_single_portfolio
+  .fotofly_fn_page_splitleft
+  .title_holder
+  > span
+  a {
+  color: #ccc;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+}
+.fotofly_fn_page_splitscreen.page_single_portfolio
+  .fotofly_fn_page_splitleft
+  .title_holder
+  > span
+  a:hover {
+  border-bottom-color: #ccc;
+}
+.fotofly_fn_page_splitscreen.page_single_portfolio
+  .fotofly_fn_page_splitleft
+  .title_holder
+  .slash {
+  display: inline-block;
+  margin: 0px 5px;
+}
+.fotofly_fn_portfolio_single .portfolio_single {
+  width: 100%;
+  float: left;
+  clear: both;
+  padding: 00px 60px 0px 60px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_portfolio_single .list {
+  width: 100%;
+  float: left;
+  clear: both;
+}
+.fotofly_fn_portfolio_single .list ul {
+  list-style-type: none;
+  margin: 0px;
+  margin-left: -80px;
+}
+.fotofly_fn_portfolio_single .list ul li {
+  margin: 0px;
+  width: 33.3333%;
+  padding-left: 80px;
+  margin-bottom: 80px;
+  float: left;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_portfolio_single .info {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin-top: -6px;
+}
+.fotofly_fn_portfolio_single .info {
+  margin-bottom: 40px;
+}
+.fotofly_fn_portfolio_single .info p {
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: #555;
+  margin-bottom: 18px;
+}
+.fotofly_fn_portfolio_single .fotofly_fn_social_icons {
+  margin-bottom: 80px;
+}
+.fotofly_fn_prevnext {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: auto;
+}
+.prevnext_inner {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: auto;
+}
+.fotofly_fn_prevnext .arrow {
+  width: 50%;
+  float: left;
+}
+.fotofly_fn_prevnext .arrow .prev {
+  width: 100%;
+  float: left;
+  clear: both;
+  text-align: right;
+  border: 1px solid #ccc;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  padding: 64px 50px 70px 20px;
+  height: 100%;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_prevnext .arrow .next {
+  width: 100%;
+  float: left;
+  clear: both;
+  text-align: left;
+  border: 1px solid #ccc;
+  border-right-color: transparent;
+  padding: 64px 20px 70px 50px;
+  height: 100%;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_prevnext .arrow h3 {
+  margin: 0px;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0px;
+  display: block;
+  clear: both;
+}
+.fotofly_fn_prevnext .arrow h3 a {
+  text-decoration: none;
+}
+.fotofly_fn_prevnext .arrow .pp {
+  display: block;
+  float: left;
+  clear: both;
+  margin-bottom: 17px;
+  width: 100%;
+}
+.fotofly_fn_prevnext .arrow p {
+  display: inline-block;
+  width: auto;
+}
+.fotofly_fn_prevnext .arrow p svg {
+  float: left;
+  color: #d2d2d2;
+  width: 25px;
+  height: 25px;
+}
+.fotofly_fn_prevnext .arrow p span {
+  display: block;
+  float: right;
+  padding-left: 30px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  color: #555;
+  font-size: 15px;
+}
+.fotofly_fn_prevnext .arrow .next p svg {
+  float: left;
+
+  -webkit-transform: rotate(180deg) translateZ(0);
+  -moz-transform: rotate(180deg) translateZ(0);
+  -ms-transform: rotate(180deg) translateZ(0);
+  transform: rotate(180deg) translateZ(0);
+}
+.fotofly_fn_prevnext .arrow .next p span {
+  float: left;
+  padding-left: 0px;
+  padding-right: 30px;
+}
+
+.fotofly_fn_page_splitscreen .fotofly_fn_portfolio_single .portfolio_single {
+  padding-top: 80px;
+}
+.fotofly_fn_page_splitscreen .fotofly_fn_portfolio_single .list ul {
+  margin-left: -80px;
+}
+.fotofly_fn_page_splitscreen .fotofly_fn_portfolio_single .list ul li {
+  width: 50%;
+  padding-left: 80px;
+  margin-bottom: 80px;
+}
+
+/*------------------------------------------------------------------*/
+/*	16) BLOG in SPLIT PAGE (BLOG #2)
+/*------------------------------------------------------------------*/
+.fotofly_fn_page_splitscreen .fotofly_fn_blog_wrap .blog_wrapper ul.mypost {
+  margin-left: -80px;
+}
+.fotofly_fn_page_splitscreen .fotofly_fn_blog_wrap .blog_wrapper ul.mypost li {
+  width: 50%;
+  margin-bottom: 55px;
+  padding-left: 80px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_page_splitscreen.blog_page
+  .fotofly_fn_page_splitleft
+  .splitscreen_title_back {
+  background-color: transparent;
+}
+.fotofly_fn_page_splitscreen.blog_page
+  .fotofly_fn_page_splitleft
+  .splitscreen_title_back
+  .bg {
+  background-image: url(../img/blog/blog_split_left_bg.jpg);
+}
+/*------------------------------------------------------------------*/
+/*	17) my HEROHEADER
+/*------------------------------------------------------------------*/
+.fotofly_fn_heroheader {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: auto;
+}
+.fotofly_fn_heroheader .heroheader_content_wrap {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: auto;
+  position: relative;
+  z-index: 30;
+}
+.fotofly_fn_heroheader_inner {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: auto;
+  position: relative;
+}
+
+.fotofly_fn_heroheader .heroheader_bg_wrap {
+  z-index: 5;
+}
+.fotofly_fn_heroheader .heroheader_bg_wrap .overlay_color {
+  z-index: 20;
+}
+.fotofly_fn_heroheader .heroheader_bg_wrap .overlay_image {
+  z-index: 15;
+}
+.fotofly_fn_heroheader .heroheader_bg_wrap .overlay_video {
+  z-index: 10;
+}
+
+.fotofly_fn_heroheader .heroheader_bg_wrap,
+.fotofly_fn_heroheader .heroheader_bg_wrap .overlay_color,
+.fotofly_fn_heroheader .heroheader_bg_wrap .overlay_image,
+.fotofly_fn_heroheader .heroheader_bg_wrap .overlay_video {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.fotofly_fn_heroheader .heroheader_bg_wrap .overlay_color {
+  background-color: #000;
+  opacity: 1;
+}
+.fotofly_fn_heroheader .heroheader_bg_wrap .overlay_image {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-image: url();
+}
+.fotofly_fn_heroheader .heroheader_content_wrap {
+  display: table;
+  text-align: center;
+}
+.fotofly_fn_heroheader .heroheader_content_inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+/*------------------------------------------------------------------*/
+/*	18) PROOFING
+/*------------------------------------------------------------------*/
+.fotofly_fn_proofing {
+  float: left;
+  width: 100%;
+  clear: both;
+  background-color: #f5f5f5;
+}
+.fotofly_fn_proofing_in {
+  float: left;
+  width: 100%;
+  clear: both;
+}
+.fotofly_fn_proofing .title_holder {
+  float: left;
+  width: 100%;
+  clear: both;
+  text-align: center;
+  margin-bottom: 44px;
+}
+.fotofly_fn_proofing .title_holder h3 {
+  margin: 0px;
+  font-size: 36px;
+  letter-spacing: 0px;
+  line-height: 1.3;
+  margin-bottom: 50px;
+}
+.fotofly_fn_proofing .title_holder ul {
+  list-style-type: none;
+  margin: 0px;
+  margin-left: -62px;
+}
+.fotofly_fn_proofing .title_holder ul li {
+  display: inline-block;
+  margin: 0px 0px 20px 62px;
+}
+.fotofly_fn_proofing .title_holder ul li span {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: #111;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.fotofly_fn_proofing .title_holder ul li span.label {
+  margin-right: 5px;
+}
+.fotofly_fn_proofing .title_holder ul li a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #eb1010;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-weight: 500;
+  border-bottom: 1px solid #eb1010;
+  padding-bottom: 3px;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.fotofly_fn_proofing .title_holder ul li a:hover {
+  border-bottom-color: transparent;
+}
+.fotofly_fn_proofing .proofing_list {
+  float: left;
+  width: 100%;
+  clear: both;
+  margin-bottom: -80px;
+}
+.fotofly_fn_proofing .proofing_list ul {
+  list-style-type: none;
+  margin: 0px;
+  margin-left: -80px;
+}
+.fotofly_fn_proofing .proofing_list ul li {
+  margin: 0px;
+  width: 33.3333%;
+  float: left;
+  padding-left: 80px;
+  margin-bottom: 80px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_proofing .proofing_list .item {
+  float: left;
+  width: 100%;
+  clear: both;
+  position: relative;
+}
+.fotofly_fn_proofing .proofing_list .item .img {
+  float: left;
+  width: 100%;
+  clear: both;
+  position: relative;
+  z-index: 10;
+}
+.fotofly_fn_proofing .proofing_list .item .item_id {
+  position: absolute;
+  z-index: 50;
+  left: 0px;
+  top: 0px;
+}
+.fotofly_fn_proofing .proofing_list .item .item_id span {
+  display: inline-block;
+  background-color: #111;
+  color: #fff;
+}
+.fotofly_fn_proofing .proofing_list .item .item_id span.id {
+  font-size: 15px;
+  letter-spacing: 0px;
+  padding: 4px 10px 4px 11px;
+  line-height: 1.5;
+  position: relative;
+}
+.fotofly_fn_proofing .proofing_list .item .item_id span.check {
+  display: none;
+  padding: 7px 10px 2px 10px;
+  position: absolute;
+  left: 100%;
+  margin-left: 2px;
+  top: 0px;
+}
+.fotofly_fn_proofing .proofing_list .item .item_id svg {
+  width: 14px;
+  height: 14px;
+}
+.fotofly_fn_proofing .proofing_list .item .overlay {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 20;
+
+  opacity: 0;
+  visibility: hidden;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.fotofly_fn_proofing .proofing_list .item .overlay_content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: table;
+}
+.fotofly_fn_proofing .proofing_list .item .overlay_content .in {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  z-index: 40;
+  width: 100%;
+  height: 100%;
+}
+.fotofly_fn_proofing .proofing_list .item .overlay_content a {
+  position: relative;
+  z-index: 99;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 15px;
+}
+.fotofly_fn_proofing .proofing_list .item .overlay_content a.cancel {
+  display: none;
+}
+.fotofly_fn_proofing .proofing_list .item .overlay_content a.zoom {
+  margin-right: 10px;
+}
+.fotofly_fn_proofing .proofing_list .item .overlay_content svg {
+  width: 14px;
+  height: 14px;
+}
+.fotofly_fn_proofing .proofing_list .item .overlay_color {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 30;
+  background-color: rgba(17, 17, 17, 0.7);
+}
+.fotofly_fn_proofing .proofing_list .item:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.fotofly_fn_proofing .proofing_list .item.checked .item_id span.check {
+  display: inline-block;
+}
+.fotofly_fn_proofing .proofing_list .item.checked .overlay_content a.cancel {
+  display: inline-block;
+}
+.fotofly_fn_proofing .proofing_list .item.checked .overlay_content a.check {
+  display: none;
+}
+/*------------------------------------------------------------------*/
+/*	19) MAGNIFIC POPUP ANIMATION
+/*------------------------------------------------------------------*/
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+/*------------------------------------------------------------------*/
+/*	20) CLIENTS
+/*------------------------------------------------------------------*/
+.fotofly_fn_clients {
+  width: 100%;
+  float: left;
+  height: auto;
+  background-color: #f5f5f5;
+  clear: both;
+}
+.fotofly_fn_clients_in {
+  width: 100%;
+  float: left;
+  clear: both;
+}
+.fotofly_fn_clients .clients_wrap {
+  width: 100%;
+  float: left;
+  clear: both;
+}
+.fotofly_fn_clients .title_holder {
+  text-align: center;
+  margin-bottom: 57px;
+}
+.fotofly_fn_clients .title_holder h3 {
+  margin: 0px;
+  font-size: 36px;
+  line-height: 1.3;
+  letter-spacing: 0px;
+  color: #111;
+}
+.fotofly_fn_clients .clients_list {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin-bottom: 40px;
+}
+.fotofly_fn_clients .clients_list ul {
+  margin: 0px;
+  list-style-type: none;
+  margin-left: -80px;
+}
+.fotofly_fn_clients .clients_list ul li {
+  margin: 0px;
+  width: 33.3333%;
+  float: left;
+  padding-left: 80px;
+  margin-bottom: 80px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_clients .clients_list .item {
+  width: 100%;
+  float: left;
+  padding: 40px 30px;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  background-color: #eee;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_clients .clients_list .item .img_holder {
+  margin-bottom: 36px;
+}
+.fotofly_fn_clients .clients_list .item .img_holder a {
+  display: inline-block;
+  width: 180px;
+  text-decoration: none;
+
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+.fotofly_fn_clients .clients_list .item .img_holder a img {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+.fotofly_fn_clients .clients_list .item .name_holder {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin-bottom: 4px;
+}
+.fotofly_fn_clients .clients_list .item .name_holder span {
+  display: block;
+  font-size: 15px;
+  line-height: 1.3;
+  letter-spacing: 0px;
+  color: #282828;
+  margin-bottom: 5px;
+}
+.fotofly_fn_clients .clients_list .item .name_holder a {
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 0px;
+  color: #282828;
+  text-decoration: none;
+  font-family: "Poppins";
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.fotofly_fn_clients .clients_list .item .name_holder a:hover {
+  color: #eb1010;
+}
+/*------------------------------------------------------------------*/
+/*	21) CLIENT SINGLE
+/*------------------------------------------------------------------*/
+.fotofly_fn_client_single {
+  width: 100%;
+  float: left;
+  height: auto;
+  background-color: #f5f5f5;
+  clear: both;
+}
+.fotofly_fn_client_single .client_single {
+  width: 100%;
+  float: left;
+  height: auto;
+  clear: both;
+}
+.fotofly_fn_client_single .info_holder {
+  width: 100%;
+  float: left;
+  height: auto;
+  clear: both;
+}
+.fotofly_fn_client_single .info {
+  width: 100%;
+  height: auto;
+  clear: both;
+  max-width: 800px;
+  margin: 0px auto;
+  position: relative;
+  min-height: 180px;
+  margin-bottom: 100px;
+}
+.fotofly_fn_client_single .info .img_holder {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.fotofly_fn_client_single .info .img_holder img {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+.fotofly_fn_client_single .info .title_holder {
+  width: 100%;
+  padding-left: 250px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_client_single .info .title {
+  padding-top: 31px;
+  margin-bottom: 28px;
+}
+.fotofly_fn_client_single .info .title span {
+  font-size: 15px;
+  line-height: 1.3;
+  letter-spacing: 0px;
+  color: #282828;
+  display: block;
+  margin-bottom: 5px;
+}
+.fotofly_fn_client_single .info .title h5 {
+  margin: 0px;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 0px;
+  color: #282828;
+  font-weight: 400;
+}
+.fotofly_fn_client_single .info .subtitle p {
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: #555;
+}
+.fotofly_fn_client_single .works_list {
+  width: 100%;
+  float: left;
+  height: auto;
+  clear: both;
+  margin-bottom: 40px;
+}
+.fotofly_fn_client_single .works_list ul {
+  margin: 0px;
+  list-style-type: none;
+  margin-left: -80px;
+}
+.fotofly_fn_client_single .works_list ul li {
+  margin: 0px;
+  width: 33.3333%;
+  float: left;
+  padding-left: 80px;
+  margin-bottom: 80px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_client_single .works_list .item {
+  width: 100%;
+  float: left;
+  clear: both;
+  position: relative;
+}
+.fotofly_fn_client_single .works_list .img_holder {
+  position: relative;
+  z-index: 10;
+}
+.fotofly_fn_client_single .works_list .title_holder {
+  position: absolute;
+  width: 100%;
+  bottom: 21px;
+  left: 0px;
+  z-index: 20;
+  padding: 0px 25px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_client_single .works_list .title_holder > span {
+  display: block;
+  margin-bottom: 4px;
+}
+.fotofly_fn_client_single .works_list .title_holder > span a {
+  font-size: 15px;
+  letter-spacing: 0px;
+  line-height: 1;
+  color: #ccc;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.fotofly_fn_client_single .works_list .title_holder > span a:hover {
+  border-bottom-color: #ccc;
+}
+.fotofly_fn_client_single .works_list .title_holder h3 {
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0px;
+  margin: 0px;
+}
+.fotofly_fn_client_single .works_list .title_holder h3 a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.fotofly_fn_client_single .works_list .title_holder h3 a:hover {
+  color: #eb1010;
+}
+
+.fotofly_fn_client_single[data-title-style="separately"]
+  .works_list
+  .item
+  .title_holder {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  padding: 0px;
+  padding-top: 23px;
+}
+.fotofly_fn_client_single[data-title-style="separately"]
+  .works_list
+  .item
+  .title_holder
+  > span
+  a {
+  color: #555;
+}
+.fotofly_fn_client_single[data-title-style="separately"]
+  .works_list
+  .item
+  .title_holder
+  > span
+  a:hover {
+  border-bottom-color: #555;
+}
+.fotofly_fn_client_single[data-title-style="separately"]
+  .works_list
+  .item
+  .title_holder
+  > h3
+  a {
+  color: #111;
+}
+.fotofly_fn_client_single[data-title-style="separately"]
+  .works_list
+  .item
+  .title_holder
+  > h3
+  a:hover {
+  color: #eb1010;
+}
+/*------------------------------------------------------------------*/
+/*	22) ABOUT
+/*------------------------------------------------------------------*/
+.fotofly_fn_about {
+  width: 100%;
+  float: left;
+  height: auto;
+  background-color: #f5f5f5;
+  clear: both;
+}
+.fotofly_fn_about_in {
+  padding: 93px 60px 0px 60px;
+  width: 100%;
+  float: left;
+  height: auto;
+  clear: both;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_about .about {
+  width: 100%;
+  float: left;
+  height: auto;
+  clear: both;
+}
+.fotofly_fn_page_splitscreen.page_about
+  .fotofly_fn_page_splitleft
+  .splitscreen_title_back
+  .bg {
+  background-image: url("https://res.cloudinary.com/dbylngblb/image/upload/v1751200430/a_u0zxyg.jpg");
+}
+.fotofly_fn_about .title_holder {
+  margin-bottom: 61px;
+}
+.fotofly_fn_about .title_holder h3 {
+  margin: 0px;
+  font-size: 36px;
+  line-height: 1.3;
+  letter-spacing: 0px;
+  color: #111;
+}
+.fotofly_fn_about .info_holder {
+  width: 100%;
+  float: left;
+  height: auto;
+  clear: both;
+  margin-bottom: 28px;
+}
+.fotofly_fn_about .fotofly_fn_social_icons {
+  margin-bottom: 56px;
+}
+.fotofly_fn_about .info_holder p {
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: #555;
+  display: block;
+  width: 100%;
+  margin-bottom: 18px;
+}
+/*------------------------------------------------------------------*/
+/*	23) CONTACT
+/*------------------------------------------------------------------*/
+.fotofly_fn_heroheader.page_contact .heroheader_content_inner {
+  display: block;
+  vertical-align: baseline;
+}
+.fotofly_fn_heroheader.page_contact .fotofly_fn_breadcrumbs {
+  background-color: transparent;
+}
+.fotofly_fn_heroheader.page_contact .fotofly_fn_breadcrumbs p {
+  color: #fff;
+}
+.fotofly_fn_heroheader.page_contact .fotofly_fn_breadcrumbs p a:after {
+  background-color: #fff;
+}
+.fotofly_fn_heroheader.page_contact .heroheader_bg_wrap .overlay_image {
+  /*Meghana Ekkada photo baledhu contact us page lo marchali*/
+  background-image: url("https://res.cloudinary.com/dbylngblb/image/upload/v1751200893/ad_x9inab.jpg");
+}
+.contact_form .empty_notice {
+  color: #fff;
+  display: none;
+  position: relative;
+  margin-bottom: 30px;
+}
+.contact_form .returnmessage {
+  display: none;
+  position: relative;
+}
+.contact_form .returnmessage span {
+  color: #009900;
+  display: block;
+}
+.contact_form .returnmessage span.contact_error {
+  color: #f00;
+}
+.fotofly_fn_contact {
+  float: left;
+  clear: both;
+  width: 100%;
+  background-color: transparent;
+}
+.fotofly_fn_contact_in {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+.fotofly_fn_contact .contact {
+  width: 100%;
+  padding: 0px 30px;
+  float: left;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_contact .title_holder {
+  margin-bottom: 67px;
+  margin-top: -8px;
+}
+.fotofly_fn_contact .title_holder h3 {
+  margin: 0px;
+  font-size: 36px;
+  line-height: 1.3;
+  letter-spacing: 0px;
+  color: #fff;
+}
+.fotofly_fn_contact .contact__form {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+.fotofly_fn_contact .contact__form ul {
+  margin: 0px;
+  list-style-type: none;
+  margin-left: -20px;
+}
+.fotofly_fn_contact .contact__form ul li {
+  margin: 0px;
+  width: 33.3333%;
+  float: left;
+  padding-left: 20px;
+  margin-bottom: 34px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_contact .contact__form ul li .item {
+  display: block;
+  width: 100%;
+  float: left;
+  text-align: left;
+}
+.fotofly_fn_contact .contact__form ul li .item input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+  padding: 10px 0px !important;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 0px;
+  font-family: "Anonymous Pro", monospace;
+}
+.fotofly_fn_contact .contact__form ul li .item input:hover,
+.fotofly_fn_contact .contact__form ul li .item input:focus {
+  border-bottom-color: #fff;
+}
+.fotofly_fn_contact .contact__form .message textarea::-webkit-input-placeholder,
+.fotofly_fn_contact .contact__form .message textarea:-moz-placeholder,
+.fotofly_fn_contact .contact__form .message textarea::-moz-placeholder,
+.fotofly_fn_contact .contact__form .message textarea:-ms-input-placeholder,
+.fotofly_fn_contact .contact__form .message textarea::-ms-input-placeholder,
+.fotofly_fn_contact .contact__form ul li .item input::-webkit-input-placeholder,
+.fotofly_fn_contact .contact__form ul li .item input:-moz-placeholder,
+.fotofly_fn_contact .contact__form ul li .item input::-moz-placeholder,
+.fotofly_fn_contact .contact__form ul li .item input:-ms-input-placeholder,
+.fotofly_fn_contact .contact__form ul li .item input::-ms-input-placeholder {
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: #999;
+  font-family: "Anonymous Pro", monospace;
+  opacity: 1;
+}
+.fotofly_fn_contact .contact__form .message textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+  padding: 10px 0px !important;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 0px;
+  font-family: "Anonymous Pro", monospace;
+}
+.fotofly_fn_contact .contact__form .message textarea:hover {
+  border-bottom-color: #fff;
+}
+.fotofly_fn_contact .contact__form .message {
+  margin-bottom: 26px;
+}
+.fotofly_fn_contact .fotofly_fn_contactsendbtn {
+  width: auto;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom-color: #fff;
+  padding: 10px 0px !important;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 0px;
+  font-family: "Anonymous Pro", monospace;
+  margin-bottom: 20px;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.fotofly_fn_contact .fotofly_fn_contactsendbtn:hover {
+  border-bottom-color: transparent;
+}
+/*------------------------------------------------------------------*/
+/*	24) PAGE 404
+/*------------------------------------------------------------------*/
+.fotofly_fn_heroheader.page_error .heroheader_content_inner {
+  display: block;
+  vertical-align: baseline;
+}
+.fotofly_fn_heroheader.page_error .fotofly_fn_breadcrumbs {
+  background-color: transparent;
+}
+.fotofly_fn_heroheader.page_error .fotofly_fn_breadcrumbs p {
+  color: #fff;
+}
+.fotofly_fn_heroheader.page_error .fotofly_fn_breadcrumbs p a:after {
+  background-color: #fff;
+}
+.fotofly_fn_heroheader.page_error .heroheader_bg_wrap .overlay_image {
+  background-image: url(../img/main_slider/1.jpg);
+}
+.fotofly_fn_errorpage {
+  width: 100%;
+  float: left;
+  height: auto;
+  background-color: transparent;
+  clear: both;
+}
+.fotofly_fn_errorpage_in {
+  width: 100%;
+  float: left;
+  height: auto;
+  clear: both;
+}
+.fotofly_fn_errorpage .errorpage {
+  width: 100%;
+  float: left;
+  padding: 0px 30px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_errorpage .title_holder {
+  margin-top: 2px;
+}
+.fotofly_fn_errorpage .title_holder h3 {
+  margin: 0px;
+  font-size: 36px;
+  line-height: 1.3;
+  letter-spacing: 0px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 92px;
+}
+.fotofly_fn_errorpage .title_holder h1 {
+  margin: 0px;
+  font-size: 220px;
+  line-height: 1;
+  letter-spacing: 0px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+.fotofly_fn_errorpage .title_holder p {
+  font-size: 15px;
+  letter-spacing: 0px;
+  line-height: 1.3;
+  color: #999;
+  margin-bottom: 30px;
+}
+/*------------------------------------------------------------------*/
+/*	25) GALLERY PAGE
+/*------------------------------------------------------------------*/
+.fotofly_fn_gallery {
+  width: 100%;
+  float: left;
+  height: auto;
+  background-color: #f5f5f5;
+  clear: both;
+}
+.fotofly_fn_gallery_in {
+  width: 100%;
+  float: left;
+  height: auto;
+  clear: both;
+  padding: 80px 80px 0px 80px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_gallery .gallery_page {
+  width: 100%;
+  height: auto;
+  clear: both;
+  max-width: 1920px;
+  margin: 0px auto;
+}
+.fotofly_fn_gallery .gallery_list {
+  width: 100%;
+  float: left;
+  height: auto;
+  clear: both;
+  margin-bottom: 40px;
+}
+.fotofly_fn_gallery .gallery_list ul {
+  margin: 0px;
+  list-style-type: none;
+  margin-left: -80px;
+}
+.fotofly_fn_gallery .gallery_list ul li {
+  width: 25%;
+  padding-left: 80px;
+  margin-bottom: 80px;
+  float: left;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_gallery .gallery_list .item {
+  width: 100%;
+  float: left;
+  height: auto;
+  clear: both;
+}
+/*------------------------------------------------------------------*/
+/*	26) SOCIAL ICONS
+/*------------------------------------------------------------------*/
+
+.fotofly_fn_social_icons > label {
+  font-size: 15px;
+  letter-spacing: 0px;
+  line-height: 40px;
+  color: #444;
+  font-weight: 600;
+  margin-right: 20px;
+}
+.fotofly_fn_social_icons > ul {
+  display: inline-block;
+  margin: 0px;
+  list-style-type: none;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_social_icons > ul > li {
+  margin: 0px;
+  display: inline-block;
+  margin-left: -3px;
+  text-align: center;
+}
+.fotofly_fn_social_icons > ul > li a {
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: #555;
+  line-height: 1;
+  width: 40px;
+  padding: 13px 0px 12px;
+  height: 40px;
+  background-color: transparent;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_social_icons > ul > li a.active,
+.fotofly_fn_social_icons > ul > li a:hover {
+  background-color: #ddd;
+}
+.fotofly_fn_social_icons > ul > li a i {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+/*------------------------------------------------------------------*/
+/*	27) BLOG SINGLE
+/*------------------------------------------------------------------*/
+.fotofly_fn_blog_single_wrap {
+  width: 100%;
+  float: left;
+  height: auto;
+  background-color: #f5f5f5;
+  clear: both;
+}
+.fotofly_fn_blog_single_wrap .blog_single_wrapper {
+  width: 100%;
+  float: left;
+  height: auto;
+  clear: both;
+}
+.fotofly_fn_blog_single_wrap .blog_single_wrapper .post_img {
+  width: 100%;
+  float: left;
+  min-height: 700px;
+  clear: both;
+  position: relative;
+  z-index: 10;
+}
+.fotofly_fn_blog_single_wrap .blog_single_wrapper .post_img .bg-img {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: 5;
+
+  background-image: url(../img/blog/single1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.fotofly_fn_blog_single_wrap .blog_single_wrapper .post_content {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: auto;
+  padding: 48px 0px 92px 0px;
+  border-bottom: 1px solid #f5f5f5;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_blog_single_wrap .blog_single_wrapper .post_content .title_holder {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin-bottom: 42px;
+}
+.fotofly_fn_blog_single_wrap
+  .blog_single_wrapper
+  .post_content
+  .title_holder
+  > span {
+  display: block;
+  float: left;
+  width: 100%;
+  clear: both;
+  line-height: 1;
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: #555;
+  margin-bottom: 16px;
+}
+.fotofly_fn_blog_single_wrap
+  .blog_single_wrapper
+  .post_content
+  .title_holder
+  > span
+  a {
+  text-decoration: none;
+  display: inline-block;
+  float: left;
+  color: #555;
+  padding-bottom: 3px;
+  position: relative;
+}
+.fotofly_fn_blog_single_wrap
+  .blog_single_wrapper
+  .post_content
+  .title_holder
+  > span
+  a:after {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: -2px;
+  left: 100%;
+  background-color: #555;
+
+  -webkit-transition: left 0.5s ease, width 0.5s ease;
+  -moz-transition: left 0.5s ease, width 0.5s ease;
+  -ms-transition: left 0.5s ease, width 0.5s ease;
+  -o-transition: left 0.5s ease, width 0.5s ease;
+  transition: left 0.5s ease, width 0.5s ease;
+}
+.fotofly_fn_blog_single_wrap
+  .blog_single_wrapper
+  .post_content
+  .title_holder
+  > span
+  a:hover:after {
+  width: 100%;
+  left: 0;
+
+  -webkit-transition: width 0.5s ease;
+  -moz-transition: width 0.5s ease;
+  -ms-transition: width 0.5s ease;
+  -o-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+.fotofly_fn_blog_single_wrap
+  .blog_single_wrapper
+  .post_content
+  .title_holder
+  span.date {
+  display: inline-block;
+  position: relative;
+  float: right;
+}
+.fotofly_fn_blog_single_wrap
+  .blog_single_wrapper
+  .post_content
+  .title_holder
+  h3 {
+  float: left;
+  width: 100%;
+  clear: both;
+  margin: 0px;
+  font-size: 30px;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  margin-bottom: 29px;
+  color: #111;
+}
+.fotofly_fn_blog_single_wrap
+  .blog_single_wrapper
+  .post_content
+  .title_holder
+  p {
+  float: left;
+  width: 100%;
+  clear: both;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+.fotofly_fn_blog_single_wrap
+  .blog_single_wrapper
+  .post_content
+  .title_holder
+  p.post_intro {
+  font-size: 24px;
+  margin-bottom: 34px;
+  color: #111;
+}
+.fotofly_fn_blog_single_wrap
+  .blog_single_wrapper
+  .post_content
+  .title_holder
+  p.text {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 38px;
+}
+.fotofly_fn_blog_single_wrap
+  .blog_single_wrapper
+  .post_content
+  .title_holder
+  p.text:last-child {
+  margin-bottom: 0px;
+}
+.fotofly_fn_tags {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: auto;
+  margin-bottom: 6px;
+  position: relative;
+}
+.fotofly_fn_tags > label {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 15px;
+  letter-spacing: 0px;
+  line-height: 1;
+  color: #444;
+  font-weight: 600;
+}
+.fotofly_fn_tags > em {
+  display: block;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 0px;
+  margin-left: -1px;
+  width: 100%;
+  padding-left: 70px;
+  color: #eb1010;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_tags > em a {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 7px;
+  margin-bottom: 8px;
+  color: #eb1010;
+  padding-bottom: 3px;
+  position: relative;
+}
+.fotofly_fn_tags > em a:after {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: -2px;
+  left: 100%;
+  background-color: #eb1010;
+
+  -webkit-transition: left 0.5s ease, width 0.5s ease;
+  -moz-transition: left 0.5s ease, width 0.5s ease;
+  -ms-transition: left 0.5s ease, width 0.5s ease;
+  -o-transition: left 0.5s ease, width 0.5s ease;
+  transition: left 0.5s ease, width 0.5s ease;
+}
+.fotofly_fn_tags > em a:hover:after {
+  width: 100%;
+  left: 0;
+
+  -webkit-transition: width 0.5s ease;
+  -moz-transition: width 0.5s ease;
+  -ms-transition: width 0.5s ease;
+  -o-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+.fotofly_fn_social_icons {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: auto;
+  position: relative;
+}
+.fotofly_fn_blog_single_wrap .fotofly_fn_social_icons > label {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.fotofly_fn_blog_single_wrap .fotofly_fn_social_icons > ul {
+  width: 100%;
+  padding-left: 70px;
+}
+.fotofly_fn_comment_wrapper {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: auto;
+}
+.fotofly_fn_comment_wrapper .fotofly_fn_comment {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: auto;
+}
+.fotofly_fn_comment_wrapper .comments {
+  width: 100%;
+  float: left;
+  clear: both;
+}
+.fotofly_fn_comment .title_holder h3 {
+  margin: 0px;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: 0px;
+  color: #111;
+  margin-bottom: 13px;
+}
+.fotofly_fn_comment .comment_single_wrap:last-child {
+  border-bottom-color: transparent;
+}
+.fotofly_fn_comment .comment_single_wrap {
+  width: 100%;
+  float: left;
+  clear: both;
+  padding: 0px 30px 44px;
+  margin-bottom: 20px;
+
+  border-bottom: 1px solid #ccc;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_comment .comment_single_wrap:last-child {
+  margin-bottom: 0px;
+}
+.fotofly_fn_comment .comment_single {
+  width: 100%;
+  padding: 27px 0px 0px 110px;
+  float: left;
+  position: relative;
+  min-height: 110px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_comment .comment_single .person_info {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  max-width: 80px;
+  text-align: center;
+}
+.fotofly_fn_comment .comment_single .person_info .info {
+  position: relative;
+}
+.fotofly_fn_comment .comment_single .person_info .img_holder {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.fotofly_fn_comment .comment_single .person_info .img_holder img {
+  z-index: 5;
+
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+.fotofly_fn_comment .comment_single .person_comment {
+  width: 100%;
+  float: left;
+  min-height: 80px;
+}
+.fotofly_fn_comment .comment_single .person_comment .inner h5 {
+  margin: 0px;
+  line-height: 1;
+  letter-spacing: 0px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #111;
+  margin-bottom: 9px;
+}
+.fotofly_fn_comment .comment_single .person_comment .inner {
+  margin-top: 21px;
+}
+.fotofly_fn_comment .comment_single .person_comment .inner > span {
+  display: block;
+  line-height: 1;
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: #555;
+  margin-bottom: 17px;
+}
+.fotofly_fn_comment .comment_single .person_comment .inner > span a {
+  text-decoration: none;
+  display: inline-block;
+  color: #eb1010;
+  padding-bottom: 3px;
+  position: relative;
+}
+.fotofly_fn_comment .comment_single .person_comment .inner > span a:after {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: -2px;
+  left: 100%;
+  background-color: #eb1010;
+
+  -webkit-transition: left 0.5s ease, width 0.5s ease;
+  -moz-transition: left 0.5s ease, width 0.5s ease;
+  -ms-transition: left 0.5s ease, width 0.5s ease;
+  -o-transition: left 0.5s ease, width 0.5s ease;
+  transition: left 0.5s ease, width 0.5s ease;
+}
+.fotofly_fn_comment
+  .comment_single
+  .person_comment
+  .inner
+  > span
+  a:hover:after {
+  width: 100%;
+  left: 0;
+
+  -webkit-transition: width 0.5s ease;
+  -moz-transition: width 0.5s ease;
+  -ms-transition: width 0.5s ease;
+  -o-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+.fotofly_fn_comment .comment_single .person_comment .inner span.date {
+  display: inline-block;
+  position: relative;
+  margin-right: 26px;
+}
+.fotofly_fn_comment .comment_single .person_comment .inner span.date:before {
+  content: "";
+  position: absolute;
+  left: 100%;
+  margin-left: 6px;
+  width: 14px;
+  height: 1px;
+  background-color: #555;
+  top: 50%;
+  margin-top: -1px;
+}
+.fotofly_fn_comment .comment_single .person_comment .inner p {
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: #555;
+}
+.fotofly_fn_comment .add_comment_wrap {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: auto;
+  padding-top: 50px;
+}
+.fotofly_fn_comment .add_comment_wrap .title_holder {
+  margin-bottom: 21px;
+}
+.fotofly_fn_comment .add_comment_wrap .title_holder h3 {
+  margin: 0px;
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  color: #111;
+}
+.fotofly_fn_comment .add_comment_wrap form > div {
+  margin-bottom: 22px;
+}
+.fotofly_fn_comment .add_comment_wrap form > div:last-child {
+  margin-bottom: 0px;
+}
+.fotofly_fn_comment .add_comment_wrap form label {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 0px;
+  line-height: 1;
+  color: #555;
+  margin-bottom: 12px;
+}
+.fotofly_fn_comment .add_comment_wrap form label span {
+  color: #c10a28;
+  display: inline-block;
+  margin-left: 7px;
+}
+.fotofly_fn_comment .add_comment_wrap form textarea {
+  width: 100%;
+  min-width: 100%;
+}
+.fotofly_fn_comment .add_comment_wrap form input[type="text"] {
+  width: 340px;
+  font-size: 15px;
+  padding: 0px 15px !important;
+  height: 44px;
+  line-height: 1;
+  color: #777;
+  vertical-align: bottom;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_comment .add_comment_wrap form textarea,
+.fotofly_fn_comment .add_comment_wrap form input[type="text"] {
+  border: none;
+  background-color: #f9f9f9;
+  font-family: "Anonymous Pro", monospace;
+
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+.fotofly_fn_comment .add_comment_wrap form input[type="submit"] {
+  font-family: "Poppins" !important;
+  font-size: 14px;
+  padding: 1px 20px 0px 20px !important;
+  height: 44px;
+  text-transform: capitalize;
+  font-weight: 400;
+  text-decoration: none;
+
+  display: inline-block;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  color: #fff;
+  background-color: #000;
+
+  -webkit-box-shadow: 1px 1px 3px rgba(235, 16, 16, 0.3);
+  -moz-box-shadow: 1px 1px 3px rgba(235, 16, 16, 0.3);
+  box-shadow: 1px 1px 3px rgba(235, 16, 16, 0.3);
+}
+.fotofly_fn_comment .add_comment_wrap form .your-website {
+  margin-bottom: 30px;
+}
+/*------------------------------------------------------------------*/
+/*	28) PAGINATION
+/*------------------------------------------------------------------*/
+.fotofly_fn_pagination {
+  width: 100%;
+  float: left;
+  clear: both;
+  text-align: center;
+}
+.fotofly_fn_pagination ul {
+  list-style-type: none;
+  margin: 0px;
+}
+.fotofly_fn_pagination ul li {
+  margin: 0px;
+  display: inline-block;
+  margin-left: -3px;
+  text-align: center;
+}
+.fotofly_fn_pagination ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: #555;
+  line-height: 1;
+  width: 40px;
+  padding: 13px 0px 12px;
+  height: 40px;
+  background-color: transparent;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_pagination ul li a.active,
+.fotofly_fn_pagination ul li a:hover {
+  background-color: #ddd;
+}
+.fotofly_fn_pagination ul li.next a {
+  background-color: transparent;
+  width: auto;
+  margin-left: 12px;
+
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+/*------------------------------------------------------------------*/
+/*	29) FOOTER
+/*------------------------------------------------------------------*/
+.fotofly_fn_footer {
+  padding: 114px 50px;
+  width: 100%;
+  float: left;
+  clear: both;
+  background-color: #f5f5f5;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_footer .instagram {
+  width: 100%;
+  clear: both;
+  float: left;
+  margin-top: 6px;
+  margin-bottom: 102px;
+}
+.fotofly_fn_footer .instagram_content {
+  max-width: 920px;
+  margin: 0px auto;
+}
+.fotofly_fn_footer .instagram_content ul {
+  list-style-type: none;
+  margin: 0px;
+  margin-left: -20px;
+  float: left;
+  position: relative;
+}
+.fotofly_fn_footer .instagram_content ul li {
+  margin: 0px;
+  width: 33.3333%;
+  float: left;
+  padding-left: 20px;
+  margin-bottom: 20px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.fotofly_fn_footer .instagram_content ul li.follow {
+  position: absolute;
+  z-index: 99;
+  margin: 0px;
+  width: 98%;
+  text-align: center;
+  top: 50%;
+
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.fotofly_fn_footer .instagram_content .following {
+  display: inline-block;
+  background-color: #fff;
+  padding: 55px 150px 52px;
+
+  -webkit-box-shadow: 1px 1px 3px rgba(235, 16, 16, 0.3);
+  -moz-box-shadow: 1px 1px 3px rgba(235, 16, 16, 0.3);
+  box-shadow: 1px 1px 3px rgba(235, 16, 16, 0.3);
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+.fotofly_fn_footer .instagram_content .following .svg {
+  width: 50px;
+  height: 50px;
+  color: #aaa;
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 20px;
+}
+.fotofly_fn_footer .instagram_content .following h3 {
+  display: block;
+  font-size: 22px;
+  letter-spacing: 0px;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+.fotofly_fn_footer .instagram_content .following p {
+  font-size: 15px;
+  letter-spacing: 0px;
+  line-height: 1;
+}
+.fotofly_fn_footer .copyright {
+  text-align: center;
+  clear: both;
+  width: 100%;
+}
+.fotofly_fn_footer .copyright span {
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: #000;
+}
+.fotofly_fn_footer .copyright span a {
+  color: #000;
+  text-decoration: none;
+  position: relative;
+}
+.fotofly_fn_footer .copyright span a:after {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: -3px;
+  left: 100%;
+  background-color: #000;
+
+  -webkit-transition: left 0.5s ease, width 0.5s ease;
+  -moz-transition: left 0.5s ease, width 0.5s ease;
+  -ms-transition: left 0.5s ease, width 0.5s ease;
+  -o-transition: left 0.5s ease, width 0.5s ease;
+  transition: left 0.5s ease, width 0.5s ease;
+}
+.fotofly_fn_footer .copyright span a:hover:after {
+  width: 100%;
+  left: 0;
+
+  -webkit-transition: width 0.5s ease;
+  -moz-transition: width 0.5s ease;
+  -ms-transition: width 0.5s ease;
+  -o-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+/*------------------------------------------------------------------*/
+/*	30) TOTOP
+/*------------------------------------------------------------------*/
+a.totop {
+  position: fixed;
+  bottom: 10px;
+  right: 24px;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  color: #fffefe;
+  z-index: 1000;
+  overflow: hidden;
+  background: #111;
+
+  -webkit-box-shadow: 1px 1px 3px rgba(235, 16, 16, 0.3);
+  -moz-box-shadow: 1px 1px 3px rgba(235, 16, 16, 0.3);
+  box-shadow: 1px 1px 3px rgba(235, 16, 16, 0.3);
+
+  opacity: 0;
+  visibility: hidden;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+a.totop span.line {
+  display: block;
+  width: 2px;
+  height: 24px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -1px;
+  top: 50%;
+  margin-top: -12px;
+}
+a.totop span.line:after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  margin-top: 2px;
+  position: absolute;
+  left: -1px;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+a.totop span.line:before {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  margin-top: 2px;
+  position: absolute;
+  left: -7px;
+
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+a.totop.opened {
+  opacity: 1;
+  visibility: visible;
+  bottom: 30px;
+}
+.fotofly_fn_wrapper_all[data-totop="on"] a.totop {
+  display: block;
+}
+.fotofly_fn_wrapper_all[data-totop="off"] a.totop {
+  display: none;
+}
+/*------------------------------------------------------------------*/
+/*	31) MEDIA QUERIES (FOR SMALL DEVICES)
+/*------------------------------------------------------------------*/
+@media (max-width: 2200px) {
+  .portfolio_list_wrap[data-col="5"] ul li {
+    width: 20%;
+  }
+}
+@media (max-width: 1800px) {
+  .portfolio_list_wrap ul li .port_list_single .port_cat a {
+    padding: 18px 94px 15px 29px;
+    min-width: 117px;
+  }
+  .portfolio_list_wrap ul li .port_list_single .port_cat {
+    left: -20px;
+  }
+  .portfolio_list_wrap[data-col="5"] ul li {
+    width: 33.3333%;
+  }
+}
+@media (max-width: 1400px) {
+  .fotofly_fn_blog_wrap {
+    padding: 0px;
+  }
+  .fotofly_fn_page_splitscreen
+    .fotofly_fn_blog_wrap
+    .blog_wrapper
+    ul.mypost
+    li {
+    padding-left: 40px;
+    margin-bottom: 15px;
+  }
+  .fotofly_fn_page_splitscreen .fotofly_fn_blog_wrap .blog_wrapper ul.mypost {
+    margin-left: -40px;
+  }
+  .portfolio_second_list li {
+    padding-left: 40px;
+    margin-bottom: 40px;
+  }
+  .portfolio_second_list {
+    margin-left: -40px;
+  }
+  .fotofly_fn_page_splitscreen .fotofly_fn_portfolio_single .list {
+    margin-bottom: 40px;
+  }
+  .fotofly_fn_page_splitscreen .fotofly_fn_portfolio_single .list ul {
+    margin-left: -40px;
+  }
+  .fotofly_fn_page_splitscreen .fotofly_fn_portfolio_single .list ul li {
+    padding-left: 40px;
+    margin-bottom: 40px;
+  }
+  .fotofly_fn_portfolio_single .portfolio_single {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .fotofly_fn_portfolio_third .list_holder.portfolio_fourth,
+  .fotofly_fn_gallery .gallery_page {
+    max-width: inherit;
+    margin: 0px;
+    float: left;
+    margin-bottom: 40px;
+  }
+  .fotofly_fn_gallery .gallery_list ul li {
+    width: 33.3333%;
+  }
+  .fotofly_fn_prevnext .arrow h3 {
+    font-size: 22px;
+  }
+  .fotofly_fn_portfolio_third .list_holder.portfolio_fourth .list_holder ul li {
+    width: 25%;
+  }
+  .portfolio_list_wrap ul li .port_list_single .port_cat .text {
+    font-size: 16px;
+  }
+  .portfolio_list_wrap ul li .port_list_single .port_cat a {
+    min-width: 77px;
+  }
+  .fotofly_fn_portfolio_third .list_holder.portfolio_fourth ul li {
+    width: 33.3333%;
+  }
+  .fotofly_fn_header ul.nav_hor li {
+    padding: 0px 17px;
+  }
+  .fotofly_fn_portfolio_content {
+    padding: 120px 100px 0px;
+  }
+}
+@media (max-width: 1250px) {
+  .fotofly_fn_portfolio_third .list_holder.portfolio_fourth {
+    margin-bottom: 30px;
+  }
+  .fotofly_fn_blog_wrap .blog_content {
+    margin-bottom: 30px;
+  }
+  .fotofly_fn_portfolio_third .portfolio_third {
+    padding-top: 99px;
+  }
+  .fotofly_fn_client_single .works_list {
+    margin-bottom: 30px;
+  }
+  .fotofly_fn_proofing .proofing_list {
+    margin-bottom: -40px;
+  }
+  .fotofly_fn_client_single .works_list ul li,
+  .fotofly_fn_proofing .proofing_list ul li {
+    width: 50%;
+    padding-left: 40px;
+    margin-bottom: 40px;
+  }
+  .fotofly_fn_client_single .works_list ul,
+  .fotofly_fn_proofing .proofing_list ul {
+    margin-left: -40px;
+  }
+  .fotofly_fn_prevnext .arrow .prev {
+    padding: 44px 20px 50px 10px;
+  }
+  .fotofly_fn_prevnext .arrow .next {
+    padding: 44px 10px 50px 20px;
+  }
+  .fotofly_fn_portfolio_third .list_holder.portfolio_fourth ul li {
+    width: 50%;
+    padding-left: 40px;
+    margin-bottom: 40px;
+  }
+  .fotofly_fn_portfolio_third .list_holder.portfolio_fourth ul {
+    margin-left: -40px;
+  }
+  .fotofly_fn_portfolio_third .list_holder {
+    margin-bottom: 30px;
+  }
+  .fotofly_fn_portfolio_third .list_holder ul {
+    margin-left: -40px;
+  }
+  .fotofly_fn_portfolio_third .list_holder ul li {
+    width: 50%;
+    margin-bottom: 40px;
+    padding-left: 40px;
+  }
+  .portfolio_second_list li {
+    padding-left: 0px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .fotofly_fn_portfolio_second {
+    margin-bottom: 30px;
+  }
+  .portfolio_second_list {
+    margin-left: 0px;
+  }
+  .fotofly_fn_blog_wrap .blog_wrapper ul.mypost li {
+    width: 50%;
+    padding-left: 40px;
+    margin-bottom: 15px;
+  }
+  .fotofly_fn_blog_wrap .blog_wrapper ul.mypost {
+    margin-left: -40px;
+  }
+  .fotofly_fn_header_content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .portfolio_list_wrap ul li {
+    width: 50% !important;
+  }
+  .portfolio_list_wrap ul li:last-child {
+    margin-bottom: 65px;
+  }
+  .portfolio_list_wrap ul {
+    margin-left: -5%;
+  }
+  .fotofly_fn_portfolio_content {
+    padding: 100px 70px 0px;
+  }
+  .fotofly_fn_footer {
+    padding: 94px 40px;
+  }
+  .fotofly_fn_footer .instagram {
+    margin-bottom: 82px;
+  }
+}
+@media (max-width: 1200px) {
+  .fotofly_fn_portfolio_single .portfolio_single {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .fotofly_fn_errorpage .title_holder h3 {
+    margin-bottom: 76px;
+  }
+  .fotofly_fn_errorpage .title_holder h1 {
+    font-size: 150px;
+    margin-bottom: 15px;
+  }
+  .fotofly_fn_about_in {
+    padding: 37px 20px 0px 20px;
+  }
+  .fotofly_fn_about .title_holder {
+    margin-bottom: 41px;
+  }
+  .fotofly_fn_page_splitscreen .fotofly_fn_portfolio_single .list ul li {
+    width: 100%;
+  }
+  .fotofly_fn_portfolio_single .list ul li {
+    width: 50%;
+  }
+  .fotofly_fn_page_splitscreen .fotofly_fn_blog_wrap .blog_wrapper ul.mypost {
+    margin-left: 0px;
+  }
+  .fotofly_fn_page_splitscreen
+    .fotofly_fn_blog_wrap
+    .blog_wrapper
+    ul.mypost
+    li {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .fotofly_fn_blog_single_wrap .blog_single_wrapper .post_img {
+    min-height: 500px;
+  }
+  .fotofly_fn_header .logo {
+    margin: 0px 23px;
+  }
+  .fotofly_fn_header ul.nav__hor > li {
+    padding: 0px 15px;
+  }
+  .fotofly_fn_header__one ul.nav__hor > li {
+    padding: 0px 15px;
+  }
+}
+@media (max-width: 1040px) {
+  .fotofly_fn_gallery .gallery_list ul li {
+    padding-left: 40px;
+    margin-bottom: 40px;
+  }
+  .fotofly_fn_gallery .gallery_list {
+    margin-bottom: 30px;
+  }
+  .fotofly_fn_gallery .gallery_list ul {
+    margin-left: -40px;
+  }
+  .fotofly_fn_gallery_in {
+    padding: 40px 20px 0px 20px;
+  }
+  .fotofly_fn_gallery .gallery_list ul li {
+    width: 50%;
+  }
+  .fotofly_fn_errorpage .errorpage {
+    padding: 0px;
+  }
+  .fotofly_fn_contact .contact {
+    padding: 0px;
+  }
+  .fotofly_fn_contact .contact__form ul li {
+    width: 50%;
+    padding-left: 50px;
+  }
+  .fotofly_fn_contact .contact__form ul {
+    margin-left: -50px;
+  }
+  .fotofly_fn_contact .contact__form ul li:last-child {
+    width: 100%;
+  }
+  .fotofly_fn_clients .clients_list ul li {
+    width: 50%;
+    padding-left: 40px;
+    margin-bottom: 40px;
+  }
+  .fotofly_fn_clients .clients_list {
+    margin-bottom: 30px;
+  }
+  .fotofly_fn_clients .clients_list ul {
+    margin-left: -40px;
+  }
+  .fotofly_fn_page_splitscreen .fotofly_fn_portfolio_single .list ul li {
+    margin-bottom: 40px;
+  }
+  .fotofly_fn_page_splitscreen .fotofly_fn_portfolio_single .portfolio_single {
+    padding-top: 40px;
+  }
+  .fotofly_fn_portfolio_single .list {
+    margin-bottom: 30px;
+  }
+  .fotofly_fn_portfolio_third .list_holder.portfolio_fourth {
+    padding: 0px 20px;
+  }
+  .fotofly_fn_portfolio_third .portfolio_third {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 59px;
+  }
+  .fotofly_fn_portfolio_third .title_holder {
+    margin-bottom: 57px;
+  }
+  .fotofly_fn_portfolio_third .title_holder h3 {
+    font-size: 40px;
+  }
+  .header_helper ul li .svg {
+    width: 16px;
+    height: 16px;
+  }
+  .header_helper ul li.mobile_trigger {
+    display: table;
+  }
+  .header_helper ul li.trigger {
+    display: none;
+  }
+  .fotofly_fn_header__one ul.nav__hor {
+    display: none !important;
+  }
+  .fotofly_fn_header__one_content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .fotofly_fn_wrapper_all[data-totop="on"] a.totop {
+    display: none;
+  }
+  .fotofly_fn_header .header_list {
+    display: none;
+  }
+  .header_mobile_logo {
+    display: block;
+  }
+  .fotofly_fn_header .header_helper {
+    position: relative;
+    float: right;
+  }
+  .fotofly_fn_header_content {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .fotofly_fn_portfolio_content {
+    padding: 70px 20px 0px 20px;
+  }
+  .fotofly_fn_footer {
+    padding: 64px 40px;
+  }
+  .portfolio_list_wrap ul li {
+    margin-bottom: 40px;
+  }
+  .portfolio_list_wrap ul li:last-child {
+    margin-bottom: 45px;
+  }
+  .fotofly_fn_footer .instagram {
+    margin-bottom: 52px;
+  }
+}
+@media (max-width: 768px) {
+  .fotofly_fn_portfolio_single .list ul li {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .fotofly_fn_portfolio_single .portfolio_single {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .fotofly_fn_portfolio_content {
+    padding: 70px 40px 0px 40px;
+  }
+  .fotofly_fn_gallery .gallery_list ul li {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .fotofly_fn_gallery .gallery_list ul {
+    margin-left: 0px;
+  }
+  .fotofly_fn_contact .contact__form ul {
+    margin-left: 0px;
+  }
+  .fotofly_fn_contact .contact__form ul li {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .fotofly_fn_about_in {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .fotofly_fn_client_single .info .title_holder,
+  .fotofly_fn_client_single .info .img_holder {
+    text-align: center;
+  }
+  .fotofly_fn_client_single .info .img_holder {
+    position: relative;
+  }
+  .fotofly_fn_client_single .info .title_holder {
+    padding-left: 0px;
+  }
+  .fotofly_fn_client_single .works_list ul li,
+  .fotofly_fn_clients .clients_list ul li {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .fotofly_fn_client_single .works_list ul,
+  .fotofly_fn_clients .clients_list ul {
+    margin-left: 0px;
+  }
+  .fotofly_fn_proofing .proofing_list ul li {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .fotofly_fn_proofing .proofing_list ul {
+    margin-left: 0px;
+  }
+  .fotofly_fn_portfolio_third .list_holder.portfolio_fourth ul li {
+    width: 100%;
+  }
+  .fotofly_fn_portfolio_third .title_holder {
+    margin-bottom: 77px;
+  }
+  .fotofly_fn_portfolio_third .portfolio_third {
+    padding-top: 91px;
+  }
+  .fotofly_fn_portfolio_third .title_holder h3 {
+    font-size: 30px;
+  }
+  .fotofly_fn_portfolio_third .list_holder ul li {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .fotofly_fn_portfolio_third .list_holder ul {
+    margin-left: 0px;
+  }
+  .fotofly_fn_portfolio_second {
+    padding: 0px 20px;
+  }
+  .fotofly_fn_page_splitleft {
+    width: 100%;
+    position: relative;
+  }
+  .fotofly_fn_page_splitright {
+    width: 100%;
+    overflow-y: visible;
+  }
+  .fotofly_fn_header__one_content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  ul.project_list {
+    margin-left: 0px;
+  }
+  ul.project_list li {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .fotofly_fn_blog_wrap .blog_wrapper ul.mypost li {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .fotofly_fn_blog_wrap .blog_wrapper ul.mypost {
+    margin-left: 0px;
+  }
+  .fotofly_fn_breadcrumbs {
+    padding: 48px 0px 47px;
+  }
+  .portfolio_list_wrap ul li {
+    width: 100% !important;
+    padding-left: 0px !important;
+  }
+  .portfolio_list_wrap ul {
+    margin-left: 0px !important;
+  }
+  .fotofly_fn_title_content span {
+    padding: 13px 29px 10px;
+    font-size: 16px;
+  }
+  .fotofly_fn_footer .instagram_content ul li.follow {
+    position: relative;
+    top: auto;
+    transform: none;
+    margin-bottom: 50px;
+    margin-left: 2%;
+  }
+  .fotofly_fn_footer .instagram_content .following {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .fotofly_fn_blog_single_wrap
+    .blog_single_wrapper
+    .post_content
+    .title_holder
+    h3,
+  .fotofly_fn_comment .title_holder h3,
+  .fotofly_fn_comment .add_comment_wrap .title_holder h3 {
+    font-size: 24px;
+  }
+  .fotofly_fn_blog_single_wrap
+    .blog_single_wrapper
+    .post_content
+    .title_holder
+    p.post_intro {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .fotofly_fn_blog_single_wrap
+    .blog_single_wrapper
+    .post_content
+    .title_holder
+    > span {
+    margin-bottom: 17px;
+  }
+  .fotofly_fn_blog_single_wrap
+    .blog_single_wrapper
+    .post_content
+    .title_holder
+    h3 {
+    margin-bottom: 25px;
+  }
+  .fotofly_fn_blog_single_wrap
+    .blog_single_wrapper
+    .post_content
+    .title_holder
+    p.text {
+    margin-bottom: 28px;
+  }
+  .fotofly_fn_blog_single_wrap
+    .blog_single_wrapper
+    .post_content
+    .title_holder {
+    margin-bottom: 32px;
+  }
+  .fotofly_fn_blog_single_wrap .blog_single_wrapper .post_content {
+    padding-bottom: 32px;
+  }
+  .fotofly_fn_comment .add_comment_wrap {
+    padding-top: 40px;
+  }
+  .fotofly_fn_comment .add_comment_wrap form input[type="text"] {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .fotofly_fn_footer .instagram_content ul li {
+    width: 50%;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+  .fotofly_fn_footer .instagram_content ul {
+    margin-left: -10px;
+    float: inherit;
+  }
+  .fotofly_fn_footer .instagram_content ul li.follow {
+    padding: 0px 0px 0px 10px !important;
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .fotofly_fn_comment .title_holder h3 {
+    text-align: center;
+  }
+  .portfolio_list_wrap ul li .port_list_single .port_cat .text {
+    letter-spacing: 1px;
+  }
+  .portfolio_list_wrap ul li .port_list_single:hover .line {
+    margin-left: 29px;
+  }
+  .portfolio_list_wrap ul li .port_list_single .port_cat a {
+    padding: 8px 64px 5px 19px;
+  }
+  .fotofly_fn_gallery_in {
+    padding: 40px 10px 0px 10px;
+  }
+  .fotofly_fn_errorpage .title_holder h1 {
+    font-size: 80px;
+  }
+  .fotofly_fn_errorpage .title_holder h3 {
+    margin-bottom: 32px;
+    font-size: 28px;
+  }
+  .header_helper ul li.search {
+    position: inherit;
+  }
+  .fotofly_fn_about .title_holder {
+    margin-bottom: 31px;
+  }
+  .fotofly_fn_about .title_holder h3,
+  .fotofly_fn_contact .title_holder h3,
+  .fotofly_fn_clients .title_holder h3 {
+    font-size: 28px;
+  }
+  .fotofly_fn_clients .title_holder {
+    margin-bottom: 40px;
+  }
+  .fotofly_fn_proofing .title_holder h3 {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+  .fotofly_fn_prevnext .arrow {
+    width: 100%;
+  }
+  .fotofly_fn_prevnext .arrow p {
+    display: block;
+  }
+  .fotofly_fn_prevnext .arrow .prev {
+    text-align: center;
+  }
+  .fotofly_fn_prevnext .arrow .next {
+    text-align: center;
+  }
+  .fotofly_fn_prevnext .arrow p svg {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    float: none;
+  }
+  .fotofly_fn_prevnext .arrow .next p svg {
+    float: none;
+  }
+  .fotofly_fn_prevnext .arrow p span {
+    display: none;
+  }
+  .fotofly_fn_prevnext .arrow .next {
+    border-left-color: transparent;
+    border-top-color: transparent;
+  }
+  .fotofly_fn_portfolio_third .list_holder.portfolio_fourth {
+    padding: 0px 10px;
+  }
+  .fotofly_fn_portfolio_third .title_holder h3 {
+    font-size: 24px;
+  }
+  .fotofly_fn_header__one .logo {
+    position: relative;
+    top: auto;
+    left: auto;
+    float: left;
+  }
+  .navigation {
+    padding-left: 0px;
+    width: auto;
+    float: right;
+  }
+  .fotofly_fn_page_splitscreen
+    .fotofly_fn_blog_wrap
+    .blog_wrapper
+    ul.mypost
+    li {
+    margin-bottom: 40px;
+  }
+  .fotofly_fn_portfolio_second {
+    padding: 0px 10px;
+  }
+  .fotofly_fn_header__one_content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .fotofly_fn_comment .comment_single {
+    padding-left: 0px;
+  }
+  .fotofly_fn_comment .comment_single .person_info {
+    position: relative;
+    top: auto;
+    max-width: inherit;
+  }
+  .fotofly_fn_comment .comment_single .person_comment .inner h5,
+  .fotofly_fn_comment .comment_single .person_comment .inner > span {
+    text-align: center;
+  }
+  .fotofly_fn_comment .comment_single_wrap {
+    padding: 0px 20px 24px 20px;
+  }
+  .fotofly_fn_blog_single_wrap
+    .blog_single_wrapper
+    .post_content
+    .title_holder
+    p,
+  .fotofly_fn_comment .comment_single .person_comment .inner p {
+    text-align: justify;
+  }
+  .fotofly_fn_comment .add_comment_wrap form input[type="submit"] {
+    width: 100%;
+  }
+  .fotofly_fn_blog_single_wrap .blog_single_wrapper .post_img {
+    min-height: 300px;
+  }
+  .fotofly_fn_blog_wrap .blog_wrapper ul.mypost li .title_holder > span {
+    margin-bottom: 6px;
+  }
+  .fotofly_fn_header_content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .fotofly_fn_portfolio_content,
+  .fotofly_fn_footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .fotofly_fn_footer .instagram_content .following {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 380px) {
+  .fotofly_fn_proofing .title_holder {
+    text-align: left;
+  }
+  .fotofly_fn_proofing .title_holder ul li span.label {
+    width: 80px;
+    word-break: break-all;
+  }
+  .fotofly_fn_proofing .title_holder ul li {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .fotofly_fn_proofing .title_holder ul {
+    margin-left: 0px;
+  }
+  .fotofly_fn_social_icons > ul {
+    padding-left: 0px;
+    display: block;
+  }
+  .fotofly_fn_portfolio_single .fotofly_fn_social_icons > ul {
+    padding-left: 0px;
+  }
+}
+@media (max-width: 320px) {
+  .fotofly_fn_header .header_helper {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .navigation {
+    width: 100%;
+    text-align: center;
+  }
+  .header_helper ul li {
+    float: inherit;
+    display: inline-block;
+  }
+  .header_helper ul li.mobile_trigger {
+    display: inline-block;
+  }
+  .hamburger {
+    display: inline-block;
+    vertical-align: text-top;
+  }
+  .header_mobile_logo {
+    width: 100%;
+    text-align: center;
+  }
+  .fotofly_fn_header__one .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .fotofly_fn_header__one .logo a {
+    display: inline-block;
+  }
+  .navigation .header_helper {
+    float: none;
+    display: inline-block;
+  }
+  .portfolio_list_wrap ul li .port_list_single .port_cat .line {
+    margin-left: 19px;
+  }
+  .fotofly_fn_footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .fotofly_fn_portfolio_content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .portfolio_list_wrap ul li .port_list_single .port_cat {
+    left: -10px;
+  }
+  .fotofly_fn_comment .comment_single_wrap {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
