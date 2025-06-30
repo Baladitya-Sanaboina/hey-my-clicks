@@ -1,7 +1,7 @@
 // email.js
 
 (function () {
-  emailjs.init("THFL48zK1pQCUGNdt"); // Replace with your EmailJS Public Key
+  emailjs.init("CxmFVc-HX-6g7jvvE"); // Replace with your EmailJS Public Key
 })();
 
 document
@@ -46,7 +46,7 @@ document
       message: message,
     };
 
-    emailjs.send("service_hn49tdf", "template_0d31vae", templateParams).then(
+    emailjs.send("service_lsx39ob", "template_0dxlgoi", templateParams).then(
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
         document.querySelector(".returnmessage").innerHTML =
